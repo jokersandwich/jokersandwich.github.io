@@ -88,26 +88,26 @@
       
         <p><strong>创建文章</strong></p>
 <p><code>$ hexo n &quot;文章的文件名&quot;</code> 在 source/_posts 目录下找到文章，打开，使用 Markdown 语法写作，保存。</p>
-<p><code>$ hexo clean</code> （不必要，清除缓存，好像清除后 github 可以秒部署）</p>
+<p><code>$ hexo clean</code> （不必要，清除缓存）</p>
 <p><code>$ hexo g</code> （生成新文章，打包到 public 目录）</p>
 <p><code>$ hexo s</code> （不必要，打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，可本地预览文章）</p>
 <p><code>$ hexo d</code> （部署发布）</p>
 <p><strong>更新文章</strong></p>
-<p><code>$ hexo clean</code></p>
+<p><code>$ hexo clean</code> （不必要）</p>
 <p><code>$ hexo g</code></p>
-<p><code>$ hexo s</code></p>
+<p><code>$ hexo s</code> （不必要）</p>
 <p><code>$ hexo d</code></p>
 <p><strong>Bug</strong></p>
 <p>Q: 执行 <code>$ hexo d</code> 后，出现 <code>error deployer not found:git</code>？<br>A: <code>$ npm install hexo-deployer-git --save</code></p>
 <p>Q: 创建新文章后，页面不显示？<br>A: <code>$ hexo g</code> 把文章生成了吗？检查 public 目录下面有没有生成的文件。</p>
 <p>Q: 执行 <code>$ hexo g</code> 后，生成错误 <code>TypeError: Cannot read property &#39;offset&#39; of null</code>？<br>A: 删除 date 和 tag，只保留 title。</p>
 <p>Q: 执行 ‘$ hexo d’ 后，无法部署到 github？<br>A: 好像现在http不太行了，修改 _config.yml 配置，<code>repo: ssh://git@github.com/jokersandwich/jokersandwich.github.io.git</code></p>
-<p>Q: 在 github 上部署 hexo 后过很久才生效？<br>A: <code>$ hexo clean</code> 清楚缓存。</p>
+<p>Q: 在 github 上部署 hexo 后过很久才生效？<br>A: 有时候秒部署，试试看先 <code>$ hexo clean</code> 清楚缓存。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/18/hexo创建笔记/" data-id="cj42od17n0001i8up1003i2gq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/18/hexo创建笔记/" data-id="cj42ofv2h000280up9we3ma0h" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li></ul>
@@ -146,7 +146,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/18/第一篇文章/" data-id="cj42od17p0002i8up3u4ehkav" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/18/第一篇文章/" data-id="cj42ofv2e000180up590sxbvs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -191,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/18/hello-world/" data-id="cj42od17h0000i8up9wwyvpi5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/18/hello-world/" data-id="cj42ofv27000080upszll7kh5" class="article-share-link">Share</a>
       
       
     </footer>
