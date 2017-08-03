@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="学习笔记," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -93,17 +93,16 @@
 
 
 
-<meta name="description" content="创建文章 $ hexo n &amp;quot;文章的文件名&amp;quot; 在 source/_posts 目录下找到文章，打开，使用 Markdown 语法写作，保存。$ hexo clean （不必要，清除缓存）$ hexo g （生成新文章，打包到 public 目录）$ hexo s （不必要，打开 http://localhost:4000/ ，可本地预览文章）$ hexo d （部署发布） 更新">
-<meta name="keywords" content="学习笔记">
+<meta name="description" content="内容划分&amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;footer&amp;gt; div 和 span实在找不到其它更符合语义的标签时使用。 预格式化文本 &amp;lt;pre&amp;gt;空   格 第二行&amp;lt;/pre&amp;gt; 代码 &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;const add">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 搭建笔记">
-<meta property="og:url" content="http://yoursite.com/2017/06/18/hexo创建笔记/index.html">
+<meta property="og:title" content="HTML：标签">
+<meta property="og:url" content="http://yoursite.com/2017/08/03/HTML：标签/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="创建文章 $ hexo n &amp;quot;文章的文件名&amp;quot; 在 source/_posts 目录下找到文章，打开，使用 Markdown 语法写作，保存。$ hexo clean （不必要，清除缓存）$ hexo g （生成新文章，打包到 public 目录）$ hexo s （不必要，打开 http://localhost:4000/ ，可本地预览文章）$ hexo d （部署发布） 更新">
-<meta property="og:updated_time" content="2017-06-18T15:31:10.367Z">
+<meta property="og:description" content="内容划分&amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;footer&amp;gt; div 和 span实在找不到其它更符合语义的标签时使用。 预格式化文本 &amp;lt;pre&amp;gt;空   格 第二行&amp;lt;/pre&amp;gt; 代码 &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;const add">
+<meta property="og:updated_time" content="2017-08-03T08:19:53.880Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 搭建笔记">
-<meta name="twitter:description" content="创建文章 $ hexo n &amp;quot;文章的文件名&amp;quot; 在 source/_posts 目录下找到文章，打开，使用 Markdown 语法写作，保存。$ hexo clean （不必要，清除缓存）$ hexo g （生成新文章，打包到 public 目录）$ hexo s （不必要，打开 http://localhost:4000/ ，可本地预览文章）$ hexo d （部署发布） 更新">
+<meta name="twitter:title" content="HTML：标签">
+<meta name="twitter:description" content="内容划分&amp;lt;header&amp;gt;, &amp;lt;nav&amp;gt;, &amp;lt;main&amp;gt;, &amp;lt;article&amp;gt;, &amp;lt;aside&amp;gt;, &amp;lt;footer&amp;gt; div 和 span实在找不到其它更符合语义的标签时使用。 预格式化文本 &amp;lt;pre&amp;gt;空   格 第二行&amp;lt;/pre&amp;gt; 代码 &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;const add">
 
 
 
@@ -131,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/18/hexo创建笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/03/HTML：标签/"/>
 
 
 
 
 
-  <title>Hexo 搭建笔记 | jokersandwich</title>
+  <title>HTML：标签 | jokersandwich</title>
   
 
 
@@ -256,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/hexo创建笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML：标签/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -273,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo 搭建笔记</h1>
+          <h1 class="post-title" itemprop="name headline">HTML：标签</h1>
         
 
         <div class="post-meta">
@@ -285,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T18:19:48+08:00">
-                2017-06-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-03T15:54:10+08:00">
+                2017-08-03
               </time>
             
 
@@ -320,19 +319,17 @@
       
 
       
-        <p><strong>创建文章</strong></p>
-<p><code>$ hexo n &quot;文章的文件名&quot;</code> 在 source/_posts 目录下找到文章，打开，使用 Markdown 语法写作，保存。<br><code>$ hexo clean</code> （不必要，清除缓存）<br><code>$ hexo g</code> （生成新文章，打包到 public 目录）<br><code>$ hexo s</code> （不必要，打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，可本地预览文章）<br><code>$ hexo d</code> （部署发布）</p>
-<p><strong>更新文章</strong></p>
-<p><code>$ hexo clean</code> （不必要）<br><code>$ hexo g</code><br><code>$ hexo s</code> （不必要）<br><code>$ hexo d</code></p>
-<p><strong>改变主题</strong></p>
-<p>下载主题到 themes 目录<br>修改 _config.yml 配置：<code>theme: &quot;主题名&quot;</code><br>推荐标配主题：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next</a></p>
-<p><strong>Bug</strong></p>
-<p>Q: 执行 <code>$ hexo d</code> 后，出现 <code>error deployer not found:git</code>？<br>A: <code>$ npm install hexo-deployer-git --save</code></p>
-<p>Q: 创建新文章后，页面不显示？<br>A: <code>$ hexo g</code> 把文章生成了吗？检查 public 目录下面有没有生成的文件。</p>
-<p>Q: 执行 <code>$ hexo g</code> 后，生成错误 <code>TypeError: Cannot read property &#39;offset&#39; of null</code>？<br>A: 删除 date 和 tag，只保留 title。</p>
-<p>Q: 执行 ‘$ hexo d’ 后，无法部署到 github？<br>A: 好像现在http不太行了，修改 _config.yml 配置：<code>repo: ssh://git@github.com/jokersandwich/jokersandwich.github.io.git</code></p>
-<p>Q: 在 github 上部署 hexo 后过很久才生效？<br>A: 有时候秒部署，试试看先 <code>$ hexo clean</code> 清除缓存。</p>
-
+        <p><strong>内容划分</strong><br><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></p>
+<p><strong>div 和 span</strong><br>实在找不到其它更符合语义的标签时使用。</p>
+<p><strong>预格式化文本</strong></p>
+<pre><code>&lt;pre&gt;空   格
+第二行&lt;/pre&gt;
+</code></pre><p><strong>代码</strong></p>
+<pre><code>&lt;pre&gt;&lt;code&gt;const add = (a, b) =&gt; a + b;&lt;/code&gt;&lt;/pre&gt;
+</code></pre><p><strong>上标和下标</strong></p>
+<pre><code>&lt;p&gt;E = MC&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;CO&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;
+</code></pre>
       
     </div>
 
@@ -359,12 +356,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/学习笔记/" rel="tag"># 学习笔记</a>
-          
-        </div>
-      
 
       
       
@@ -374,8 +365,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/18/第一篇文章/" rel="next" title="第一篇文章">
-                <i class="fa fa-chevron-left"></i> 第一篇文章
+              <a href="/2017/08/03/HTML：简介/" rel="next" title="HTML：简介">
+                <i class="fa fa-chevron-left"></i> HTML：简介
               </a>
             
           </div>
@@ -384,8 +375,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/07/18/让网站更个性化——selection/" rel="prev" title="让网站更个性化——selection">
-                让网站更个性化——selection <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/03/HTML：链接与图片/" rel="prev" title="HTML：链接与图片">
+                HTML：链接与图片 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

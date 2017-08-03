@@ -256,6 +256,126 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML：表单/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/03/HTML：表单/" itemprop="url">HTML：表单</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-03T18:30:10+08:00">
+                2017-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>GET</strong><br>语义：从服务器拿数据，不会修改服务器，每次操作结果相同，会缓存<br>传输：数据在 url 中，一次发送</p>
+<p><strong>POST</strong><br>语义：向服务器提交数据，会修改服务器，每次操作结果不同，不会缓存<br>传输：数据在 http 的请求体中，两次发送</p>
+<p><strong>HTTP method</strong><br>GET, POST, HEAD, PUT, DELETE, OPTIONS</p>
+<p><strong>单行文本框</strong><br>name 必须有，是向服务器发送数据对应的 key<br>value 是默认值<br>placeholder 是占位符<br>autofocus 在打开页面后获得焦点，比如搜索引擎输入框</p>
+<p><strong>input 类型</strong><br>text, password, radio, checkbox, submit, file, number, range, date, month, color</p>
+<p><strong>非 input 类型</strong><br>textarea, select</p>
+<p><strong>button 类型</strong><br>submit, button, reset</p>
+<p><strong>label</strong><br>input 与文字关联，提升可用性，方便盲人输入</p>
+<p><strong>表单设计</strong><br>帮助用户不出错<br>尽早提示错误<br>扩大选择/点击区域<br>控件较多时要分组<br>主要动作和次要动作</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML：链接与图片/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -276,6 +396,125 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/2017/08/03/HTML：链接与图片/" itemprop="url">HTML：链接与图片</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-03T16:04:14+08:00">
+                2017-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>https</strong><br>相比 http，简单来说加密了传输过程和数据，一方面更好保护隐私，另一方面防止运营商劫持流量。</p>
+<p><strong>省略协议</strong><br><code>//xxx.com/xxx</code>，浏览器根据当前页面自动选择 http 或 https，好处是两种资源都可以加载。</p>
+<p><strong>省略协议和 host</strong><br>浏览器根据当前页面自动补齐，实际项目中一般省略协议和 host，用绝对路径从根目录写起。</p>
+<p><strong>绝对路径和相对路径</strong><br>绝对路径开头是 /，相对于根目录：<code>/xxx/xxx.html</code>。<br>相对路径开头不是 /，相对于当前页面所在的目录：<code>xxx/xxx.html</code>、<code>./xxx/xxx.html</code>、<code>../../xxx.html</code>。</p>
+<p><strong>页面内链接</strong></p>
+<pre><code>&lt;a href=&quot;#b&quot;&gt;a&lt;/a&gt;
+&lt;p id=&quot;b&quot;&gt;b&lt;/p&gt;
+</code></pre><p><strong>图片</strong><br>alt 一定要写，特殊情况下不会丢失信息，比如盲人的读屏软件、省流量模式。<br>width 和 height 建议在 HTML 中加入，可以预留空白，防止加载完成后页面跳动影响用户体验。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML：标签/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/03/HTML：标签/" itemprop="url">HTML：标签</a></h1>
         
 
         <div class="post-meta">
@@ -324,15 +563,17 @@
       
         
           
-            <p><strong>https</strong><br>相比 http，简单来说加密了传输过程和数据，一方面更好保护隐私，另一方面防止运营商劫持流量</p>
-<p><strong>省略协议</strong><br><code>//xxx.com/xxx</code>，浏览器根据当前页面自动选择 http 或 https，好处是两种资源都可以加载</p>
-<p><strong>省略协议和 host</strong><br>浏览器根据当前页面自动补齐，实际项目中一般省略协议和 host，用绝对路径从根目录写起</p>
-<p><strong>绝对路径和相对路径</strong><br>绝对路径开头是 / ，相对于根目录：<code>/xxx/xxx.html</code><br>相对路径开头不是 / ，相对于当前页面所在的目录：<code>xxx/xxx.html</code>、<code>./xxx/xxx.html</code>、<code>../../xxx.html</code></p>
-<p><strong>页面内链接</strong></p>
-<pre><code>&lt;a href=&quot;#b&quot;&gt;a&lt;/a&gt;
-&lt;p id=&quot;b&quot;&gt;b&lt;/p&gt;
-</code></pre><p><strong>图片</strong><br>alt 一定要写，特殊情况下不会丢失信息，比如盲人的读屏软件、省流量模式<br>width 和 height 建议在 HTML 中加入，可以预留空白，防止加载完成后页面跳动影响用户体验</p>
-
+            <p><strong>内容划分</strong><br><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></p>
+<p><strong>div 和 span</strong><br>实在找不到其它更符合语义的标签时使用。</p>
+<p><strong>预格式化文本</strong></p>
+<pre><code>&lt;pre&gt;空   格
+第二行&lt;/pre&gt;
+</code></pre><p><strong>代码</strong></p>
+<pre><code>&lt;pre&gt;&lt;code&gt;const add = (a, b) =&gt; a + b;&lt;/code&gt;&lt;/pre&gt;
+</code></pre><p><strong>上标和下标</strong></p>
+<pre><code>&lt;p&gt;E = MC&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;CO&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;
+</code></pre>
           
         
       
@@ -375,7 +616,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML：HTML简介与文本/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML：简介/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -394,7 +635,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/03/HTML：HTML简介与文本/" itemprop="url">HTML：HTML简介与文本</a></h1>
+                <a class="post-title-link" href="/2017/08/03/HTML：简介/" itemprop="url">HTML：简介</a></h1>
         
 
         <div class="post-meta">
@@ -443,22 +684,13 @@
       
         
           
-            <p><strong>HTML 是什么？</strong><br>HyperText Markup Language, 使用标签来描述页面的内容和结构</p>
-<p><strong>HTML 的产生</strong><br>1989 年，Tim Berners-Lee，还发明了浏览器、服务器和 HTTP</p>
-<p><strong>HTML 1.0</strong><br>1991 年，少量标签</p>
-<p><strong>HTML 2.0</strong><br>1994 年，IETF，更多标签</p>
-<p><strong>HTML 3.2</strong><br>1997 年，W3C，HTML 3.0失败，W3C 接管 HTML 标准化</p>
-<p><strong>HTML 4.01</strong><br>1998 年，内容与样式分离，CSS支持</p>
-<p><strong>HTML 5</strong><br>2008 年，W3C HTML5 草案发布，新增语义化标签、canvas、video、audio、离线、本地储存、拖拽等</p>
-<p><strong>预格式化文本</strong></p>
-<pre><code>&lt;pre&gt;空   格
-第二行&lt;/pre&gt;
-</code></pre><p><strong>代码</strong><br><code>&lt;pre&gt;&lt;code&gt;const add = (a, b) =&gt; a + b;&lt;/code&gt;&lt;/pre&gt;</code></p>
-<p><strong>内容划分</strong><br>header, nav, main, article, aside, footer</p>
-<p><strong>上标和下标</strong></p>
-<pre><code>&lt;p&gt;E = MC&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;CO&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;
-</code></pre><p><strong>div 和 span</strong><br>实在找不到其它更符合语义的标签时使用</p>
+            <p>HTML 是什么？<br>HyperText Markup Language，使用标签来描述页面的内容和结构。</p>
+<p>HTML 的产生<br>1989 年，Tim Berners-Lee，还发明了浏览器、服务器和 HTTP。</p>
+<p>HTML 1.0<br>1991 年，少量标签。</p>
+<p>HTML 2.0<br>1994 年，IETF，更多标签。</p>
+<p>HTML 3.2<br>1997 年，W3C，HTML 3.0失败，W3C 接管 HTML 标准化。</p>
+<p>HTML 4.01<br>1998 年，内容与样式分离，CSS支持。</p>
+<p>HTML 5<br>2008 年，W3C HTML5 草案发布，新增语义化标签、canvas、video、audio、离线、本地储存、拖拽等。</p>
 
           
         
@@ -1137,7 +1369,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
