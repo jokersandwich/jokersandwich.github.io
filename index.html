@@ -256,6 +256,127 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/17/CSS笔记：概念和简单选择器/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/17/CSS笔记：概念和简单选择器/" itemprop="url">CSS 笔记：概念和简单选择器</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-17T18:57:45+08:00">
+                2017-08-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>CSS 语法</strong><br><img src="http://ot8ooevw7.bkt.clouddn.com/CSS%E8%A7%84%E5%88%99.jpg" alt="CSS 规则" width="300px"></p>
+<p><strong>使用 CSS</strong><br>链接，可以被浏览器缓存<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/xxx/style.css&quot;&gt;</code><br>嵌入，省掉一个 http 请求</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    p { color: #fff; }
+&lt;/style&gt;
+</code></pre><p>内联，一般不用<br><code>&lt;p style=&quot;color:#fff&quot;&gt;Content&lt;/p&gt;</code></p>
+<p><strong>简单选择器</strong><br>通配选择器：<code>* { color: #fff; }</code><br>标签选择器：<code>p { color: #fff; }</code><br>ID 选择器：<code>#example { color: #fff; }</code><br>类选择器：<code>.icon { color: #fff; }</code></p>
+<p><strong>其它选择器</strong><br>属性选择器：<code>input[type=&quot;password] { color: red; }</code><br>伪类选择器：<code>a:hover { color:red }</code></p>
+<p><strong>选择器组合</strong><br>直接组合 <code>p.warning { color: red }</code><br>后代组合 <code>article p { color: #fff }</code><br>子代组合 <code>article&gt;p { color: #fff }</code></p>
+<p><strong>选择器组</strong><br><code>body, h1, h2, h3, h4, h5, h6, ul, ol, li { margin: 0; padding: 0; }</code></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML笔记：meta标签/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1332,121 +1453,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/第一篇文章/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/18/第一篇文章/" itemprop="url">第一篇文章</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T18:17:46+08:00">
-                2017-06-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>blog 根据这篇教程搭建：<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25471760</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1489,7 +1502,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
