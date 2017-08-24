@@ -93,16 +93,15 @@
 
 
 
-<meta name="description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：文本样式">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：文本样式/index.html">
+<meta name="description" content="jokersandwich&apos;s personal blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="jokersandwich">
+<meta property="og:url" content="http://yoursite.com/page/4/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:updated_time" content="2017-08-17T22:53:08.675Z">
+<meta property="og:description" content="jokersandwich&apos;s personal blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：文本样式">
-<meta name="twitter:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="twitter:title" content="jokersandwich">
+<meta name="twitter:description" content="jokersandwich&apos;s personal blog">
 
 
 
@@ -130,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/"/>
+  <link rel="canonical" href="http://yoursite.com/page/4/"/>
 
 
 
 
 
-  <title>CSS 笔记：文本样式 | jokersandwich</title>
+  <title>jokersandwich</title>
   
 
 
@@ -161,7 +160,9 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail ">
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -244,9 +245,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -255,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/第一篇文章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +273,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：文本样式</h1>
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/18/第一篇文章/" itemprop="url">第一篇文章</a></h1>
         
 
         <div class="post-meta">
@@ -284,8 +287,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T05:28:39+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T18:17:46+08:00">
+                2017-06-18
               </time>
             
 
@@ -319,47 +322,24 @@
       
 
       
-        <p><strong>通用字体族</strong><br>Serif 衬线体：Georgia、宋体<br>Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑<br>Cursive 手写体：Caflisch Script、楷体<br>Fantasy 梦幻字体：Comic Sans MS<br>Monospace 等宽字体：Consolas、Courier、中文字体<br><code>h1 { font-family: Helvetica, sans-serif; } /* 没有 Helvetica 时，系统根据通用字体族匹配一个字体 */</code></p>
-<p><strong>font-family 使用</strong><br>英文字体放在中文字体前面。（因为中文字体包含英文，会把英文设置成比如微软雅黑）<br>最后总是添加通用字体族。</p>
-<p><strong>font-size</strong><br>绝对值：xx-small, x-small, small, medium, large, x-large, xx-large<br>相对值：larger, smaller<br>百分数：相对于父元素计算值<br>长度：px, em<br>初始值为 medium（由浏览器设置决定，一般 16px）</p>
-<p><strong>em</strong><br>元素的 font-size 属性是相对于父元素的 font-size 的计算值。<br>其它属性是相对于元素本身的 font-size 的计算值。<br><code>h2 { font-size: 1.5em; margin-bottom: 1em; }</code></p>
-<p><strong>line-height</strong><br>段落文字一般取值 1.4~1.8<br><code>p { line-height: 1.5 }</code></p>
-<p><strong>font 缩写</strong><br><code>h1 { font: bold 14px/1.7 Helvetica, sans-serif; } /* 斜体 粗细 大小/行高 字体族 */</code></p>
-<p><strong>Web Fonts</strong></p>
-<pre><code>@font-face {
-    font-family: &apos;Lobster&apos;;
-    src: local(&apos;Lobster&apos;),
-         local(&apos;Lobster-Regular&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff2) format(&apos;woff2&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff&apos;) format(&apos;woff&apos;);
-}
-h1 { font-familt: &apos;Lobster&apos;, cursive; }
-</code></pre><p><strong>Web fonts 链接</strong><br><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a><br><a href="https://cdn.baomitu.com/" target="_blank" rel="external">Baomitu CDN</a><br><a href="http://font-spider.org/" target="_blank" rel="external">Font Spider</a></p>
-<p><strong>text-align</strong><br>justify 是两端对齐，但最后一行/单独一行不会起作用。<br><code>p { text-align: justify; }</code></p>
-<p><strong>white-space</strong><br>指定空白符如何处理，取值为 normal、nowrap、pre 等。</p>
-<p><strong>word-break</strong><br>指定是否允许再单词中间换行，取值为 normal、break-all、break-word 等。</p>
+        
+          
+            <p>blog 根据这篇教程搭建：<a href="https://zhuanlan.zhihu.com/p/25471760" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25471760</a></p>
 
+          
+        
       
     </div>
 
     <div>
       
-        
-
-      
     </div>
 
     <div>
       
-        
-
-      
     </div>
 
     <div>
-      
-        
-
       
     </div>
 
@@ -367,42 +347,25 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
       
 
       
-      
+
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/08/17/CSS笔记：概念和简单选择器/" rel="next" title="CSS 笔记：概念和简单选择器">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：概念和简单选择器
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/18/CSS笔记：浮动/" rel="prev" title="CSS 笔记：浮动">
-                CSS 笔记：浮动 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
+    
+  </section>
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
+
 
 
           </div>
@@ -410,10 +373,6 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -600,10 +559,10 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-
+  
 
   
 

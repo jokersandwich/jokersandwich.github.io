@@ -93,16 +93,18 @@
 
 
 
-<meta name="description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="description" content="事件绑定行内绑定：&amp;lt;input type=&amp;quot;button&amp;quot; onclick=&amp;quot;function();&amp;quot; /&amp;gt;DOM 绑定：btn.onclick = function();事件监听：btn.addEventListener(&amp;#39;click&amp;#39;, function()); 事件流动画演示 捕获阶段当我们在 DOM 树的某个节点发生了一些">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：文本样式">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：文本样式/index.html">
+<meta property="og:title" content="JS 笔记：DOM &amp; BOM">
+<meta property="og:url" content="http://yoursite.com/2017/08/25/JS笔记：DOM & BOM/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:updated_time" content="2017-08-17T22:53:08.675Z">
+<meta property="og:description" content="事件绑定行内绑定：&amp;lt;input type=&amp;quot;button&amp;quot; onclick=&amp;quot;function();&amp;quot; /&amp;gt;DOM 绑定：btn.onclick = function();事件监听：btn.addEventListener(&amp;#39;click&amp;#39;, function()); 事件流动画演示 捕获阶段当我们在 DOM 树的某个节点发生了一些">
+<meta property="og:image" content="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E6%8D%95%E8%8E%B7%E5%92%8C%E5%86%92%E6%B3%A1.png">
+<meta property="og:updated_time" content="2017-08-24T23:39:43.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：文本样式">
-<meta name="twitter:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="twitter:title" content="JS 笔记：DOM &amp; BOM">
+<meta name="twitter:description" content="事件绑定行内绑定：&amp;lt;input type=&amp;quot;button&amp;quot; onclick=&amp;quot;function();&amp;quot; /&amp;gt;DOM 绑定：btn.onclick = function();事件监听：btn.addEventListener(&amp;#39;click&amp;#39;, function()); 事件流动画演示 捕获阶段当我们在 DOM 树的某个节点发生了一些">
+<meta name="twitter:image" content="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E6%8D%95%E8%8E%B7%E5%92%8C%E5%86%92%E6%B3%A1.png">
 
 
 
@@ -130,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/25/JS笔记：DOM & BOM/"/>
 
 
 
 
 
-  <title>CSS 笔记：文本样式 | jokersandwich</title>
+  <title>JS 笔记：DOM & BOM | jokersandwich</title>
   
 
 
@@ -255,7 +257,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：DOM & BOM/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：文本样式</h1>
+          <h1 class="post-title" itemprop="name headline">JS 笔记：DOM & BOM</h1>
         
 
         <div class="post-meta">
@@ -284,8 +286,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T05:28:39+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:31+08:00">
+                2017-08-25
               </time>
             
 
@@ -319,25 +321,18 @@
       
 
       
-        <p><strong>通用字体族</strong><br>Serif 衬线体：Georgia、宋体<br>Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑<br>Cursive 手写体：Caflisch Script、楷体<br>Fantasy 梦幻字体：Comic Sans MS<br>Monospace 等宽字体：Consolas、Courier、中文字体<br><code>h1 { font-family: Helvetica, sans-serif; } /* 没有 Helvetica 时，系统根据通用字体族匹配一个字体 */</code></p>
-<p><strong>font-family 使用</strong><br>英文字体放在中文字体前面。（因为中文字体包含英文，会把英文设置成比如微软雅黑）<br>最后总是添加通用字体族。</p>
-<p><strong>font-size</strong><br>绝对值：xx-small, x-small, small, medium, large, x-large, xx-large<br>相对值：larger, smaller<br>百分数：相对于父元素计算值<br>长度：px, em<br>初始值为 medium（由浏览器设置决定，一般 16px）</p>
-<p><strong>em</strong><br>元素的 font-size 属性是相对于父元素的 font-size 的计算值。<br>其它属性是相对于元素本身的 font-size 的计算值。<br><code>h2 { font-size: 1.5em; margin-bottom: 1em; }</code></p>
-<p><strong>line-height</strong><br>段落文字一般取值 1.4~1.8<br><code>p { line-height: 1.5 }</code></p>
-<p><strong>font 缩写</strong><br><code>h1 { font: bold 14px/1.7 Helvetica, sans-serif; } /* 斜体 粗细 大小/行高 字体族 */</code></p>
-<p><strong>Web Fonts</strong></p>
-<pre><code>@font-face {
-    font-family: &apos;Lobster&apos;;
-    src: local(&apos;Lobster&apos;),
-         local(&apos;Lobster-Regular&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff2) format(&apos;woff2&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff&apos;) format(&apos;woff&apos;);
-}
-h1 { font-familt: &apos;Lobster&apos;, cursive; }
-</code></pre><p><strong>Web fonts 链接</strong><br><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a><br><a href="https://cdn.baomitu.com/" target="_blank" rel="external">Baomitu CDN</a><br><a href="http://font-spider.org/" target="_blank" rel="external">Font Spider</a></p>
-<p><strong>text-align</strong><br>justify 是两端对齐，但最后一行/单独一行不会起作用。<br><code>p { text-align: justify; }</code></p>
-<p><strong>white-space</strong><br>指定空白符如何处理，取值为 normal、nowrap、pre 等。</p>
-<p><strong>word-break</strong><br>指定是否允许再单词中间换行，取值为 normal、break-all、break-word 等。</p>
+        <p><strong>事件绑定</strong><br>行内绑定：<code>&lt;input type=&quot;button&quot; onclick=&quot;function();&quot; /&gt;</code><br>DOM 绑定：<code>btn.onclick = function();</code><br>事件监听：<code>btn.addEventListener(&#39;click&#39;, function());</code></p>
+<p><strong>事件流</strong><br><a href="http://jsbin.com/exezex/4/edit?css,js,output" target="_blank" rel="external">动画演示</a><br><img width="400px" src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E6%8D%95%E8%8E%B7%E5%92%8C%E5%86%92%E6%B3%A1.png" alt="事件流"></p>
+<p><strong>捕获阶段</strong><br>当我们在 DOM 树的某个节点发生了一些操作（例如单击、鼠标移动上去），就会有一个事件发射过去。这个事件从 Window 发出，不断经过下级节点直到目标节点。在到达目标节点之前的过程，就是捕获阶段（Capture Phase）。<br><code>btn.addEventListener(&#39;click&#39;, function(), true); // 监听捕获阶段，从顶层到目标依次处理事件</code></p>
+<p><strong>目标阶段</strong><br>事件到了事件触发目标节点那里，最终在目标节点上触发这个事件，就是目标阶段。</p>
+<p><strong>冒泡阶段</strong><br>当事件达到目标节点之后，就会沿着原路返回，由于这个过程类似水泡从底部浮到顶部，所以称作冒泡阶段。<br><code>btn.addEventListener(&#39;click&#39;, function()); // 默认监听冒泡阶段，从目标到顶层依次处理事件</code></p>
+<p><strong>停止事件冒泡</strong><br><code>event.stopPropagation(); // 监听事件节点，只在目标节点处理事件</code></p>
+<p><strong>事件代理</strong><br>因为事件有冒泡机制，所有子节点的事件都会顺着父级节点跑回去，所以我们可以通过监听父级节点来实现监听子节点的功能，这就是事件代理。<br>优势：<br>1.减少事件绑定，提升性能。<br>2.动态变化的 DOM 结构，仍然可以监听。</p>
+<p><strong>UI 组件设计</strong><br>1.结构设计<br>2.API 设计<br>3.控制流设计</p>
+<p><strong>浏览器常用 API</strong><br>alert/confirm, Location, navigator.userAgent, Cookie, Storage, XHR(Ajax), WebSockets, Canvas</p>
+<p><strong>Cookie</strong><br>网站跟踪用户行为，服务器用以标记 Session<br>少量数据，跟随 HTTP 请求（header）发送<br>可设置过期时间<br>网站 Cookie 数量有限制<br>支持 http-only<br>JavaScript 原生的 Cookie API 不好用</p>
+<p><strong>Storage</strong><br>可以储存的数据量比较大，但仍有限制，别滥用<br>数据格式为字符串，可以用 JOSN 解析<br>有 LocalStorage 和 SessionStorage 两种类型，默认无过期时间<br>并不会随着 HTTP 请求发给服务器</p>
+<p><strong>Canvas</strong><br>绘制图形<br>处理图片（必须是同域）<br>高性能动画<br>2D 游戏</p>
 
       
     </div>
@@ -374,8 +369,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/17/CSS笔记：概念和简单选择器/" rel="next" title="CSS 笔记：概念和简单选择器">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：概念和简单选择器
+              <a href="/2017/08/25/JS笔记：函数/" rel="next" title="JS 笔记：函数">
+                <i class="fa fa-chevron-left"></i> JS 笔记：函数
               </a>
             
           </div>
@@ -384,8 +379,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/18/CSS笔记：浮动/" rel="prev" title="CSS 笔记：浮动">
-                CSS 笔记：浮动 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/25/JS笔记：服务器与HTTP基础/" rel="prev" title="JS 笔记：服务器与HTTP基础">
+                JS 笔记：服务器与HTTP基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

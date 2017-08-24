@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="description" content="特点动态 + 弱类型解释型或实时编译（JIT）型语言面向对象函数式特征灵活和可扩展性反射与元编程高性能单线程异步非阻塞 作用改变网页文档元素和属性（通过 DOM）操作浏览器 api（通过 BOM）相应用户行为（事件机制）发送和接受数据（XHR、Fetch、WS）保存数据和状态（Storage）执行异步任务（Timer、Promise）处理数据（ArrayBuffer、TypedArray）操作文件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：文本样式">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：文本样式/index.html">
+<meta property="og:title" content="JS 笔记：概述">
+<meta property="og:url" content="http://yoursite.com/2017/08/25/JS笔记：概述/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:updated_time" content="2017-08-17T22:53:08.675Z">
+<meta property="og:description" content="特点动态 + 弱类型解释型或实时编译（JIT）型语言面向对象函数式特征灵活和可扩展性反射与元编程高性能单线程异步非阻塞 作用改变网页文档元素和属性（通过 DOM）操作浏览器 api（通过 BOM）相应用户行为（事件机制）发送和接受数据（XHR、Fetch、WS）保存数据和状态（Storage）执行异步任务（Timer、Promise）处理数据（ArrayBuffer、TypedArray）操作文件">
+<meta property="og:updated_time" content="2017-08-24T22:59:35.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：文本样式">
-<meta name="twitter:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="twitter:title" content="JS 笔记：概述">
+<meta name="twitter:description" content="特点动态 + 弱类型解释型或实时编译（JIT）型语言面向对象函数式特征灵活和可扩展性反射与元编程高性能单线程异步非阻塞 作用改变网页文档元素和属性（通过 DOM）操作浏览器 api（通过 BOM）相应用户行为（事件机制）发送和接受数据（XHR、Fetch、WS）保存数据和状态（Storage）执行异步任务（Timer、Promise）处理数据（ArrayBuffer、TypedArray）操作文件">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/25/JS笔记：概述/"/>
 
 
 
 
 
-  <title>CSS 笔记：文本样式 | jokersandwich</title>
+  <title>JS 笔记：概述 | jokersandwich</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：概述/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：文本样式</h1>
+          <h1 class="post-title" itemprop="name headline">JS 笔记：概述</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T05:28:39+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:02+08:00">
+                2017-08-25
               </time>
             
 
@@ -319,25 +319,10 @@
       
 
       
-        <p><strong>通用字体族</strong><br>Serif 衬线体：Georgia、宋体<br>Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑<br>Cursive 手写体：Caflisch Script、楷体<br>Fantasy 梦幻字体：Comic Sans MS<br>Monospace 等宽字体：Consolas、Courier、中文字体<br><code>h1 { font-family: Helvetica, sans-serif; } /* 没有 Helvetica 时，系统根据通用字体族匹配一个字体 */</code></p>
-<p><strong>font-family 使用</strong><br>英文字体放在中文字体前面。（因为中文字体包含英文，会把英文设置成比如微软雅黑）<br>最后总是添加通用字体族。</p>
-<p><strong>font-size</strong><br>绝对值：xx-small, x-small, small, medium, large, x-large, xx-large<br>相对值：larger, smaller<br>百分数：相对于父元素计算值<br>长度：px, em<br>初始值为 medium（由浏览器设置决定，一般 16px）</p>
-<p><strong>em</strong><br>元素的 font-size 属性是相对于父元素的 font-size 的计算值。<br>其它属性是相对于元素本身的 font-size 的计算值。<br><code>h2 { font-size: 1.5em; margin-bottom: 1em; }</code></p>
-<p><strong>line-height</strong><br>段落文字一般取值 1.4~1.8<br><code>p { line-height: 1.5 }</code></p>
-<p><strong>font 缩写</strong><br><code>h1 { font: bold 14px/1.7 Helvetica, sans-serif; } /* 斜体 粗细 大小/行高 字体族 */</code></p>
-<p><strong>Web Fonts</strong></p>
-<pre><code>@font-face {
-    font-family: &apos;Lobster&apos;;
-    src: local(&apos;Lobster&apos;),
-         local(&apos;Lobster-Regular&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff2) format(&apos;woff2&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff&apos;) format(&apos;woff&apos;);
-}
-h1 { font-familt: &apos;Lobster&apos;, cursive; }
-</code></pre><p><strong>Web fonts 链接</strong><br><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a><br><a href="https://cdn.baomitu.com/" target="_blank" rel="external">Baomitu CDN</a><br><a href="http://font-spider.org/" target="_blank" rel="external">Font Spider</a></p>
-<p><strong>text-align</strong><br>justify 是两端对齐，但最后一行/单独一行不会起作用。<br><code>p { text-align: justify; }</code></p>
-<p><strong>white-space</strong><br>指定空白符如何处理，取值为 normal、nowrap、pre 等。</p>
-<p><strong>word-break</strong><br>指定是否允许再单词中间换行，取值为 normal、break-all、break-word 等。</p>
+        <p><strong>特点</strong><br>动态 + 弱类型<br>解释型或实时编译（JIT）型语言<br>面向对象<br>函数式特征<br>灵活和可扩展性<br>反射与元编程<br>高性能<br>单线程异步非阻塞</p>
+<p><strong>作用</strong><br>改变网页文档元素和属性（通过 DOM）<br>操作浏览器 api（通过 BOM）<br>相应用户行为（事件机制）<br>发送和接受数据（XHR、Fetch、WS）<br>保存数据和状态（Storage）<br>执行异步任务（Timer、Promise）<br>处理数据（ArrayBuffer、TypedArray）<br>操作文件（File API）</p>
+<p><strong>谁在使用 JavsScript</strong><br>浏览器、node.js、ReactNative、mongoDB/CouchDB、树莓派、COCOS</p>
+<p><strong>兼容性</strong><br><a href="http:kangax.github.io/compat-table/es5/" target="_blank" rel="external">速查表</a><br>方案 1：Shim(<a href="https://github.com/es-shims/es5-shim" target="_blank" rel="external">es5</a> / <a href="https://github.com/es-shims/es6-shim" target="_blank" rel="external">es6</a>) &amp; <a href="https://polyfill.io/" target="_blank" rel="external">Polyfill</a><br>方案 2：Library（实际项目里对于兼容 IE8 以下浏览器建议使用 jQuery）<br>方案 3：Compiler（Babel / JSX / TypeScript）</p>
 
       
     </div>
@@ -374,8 +359,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/17/CSS笔记：概念和简单选择器/" rel="next" title="CSS 笔记：概念和简单选择器">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：概念和简单选择器
+              <a href="/2017/08/18/CSS笔记：工程化/" rel="next" title="CSS 笔记：工程化">
+                <i class="fa fa-chevron-left"></i> CSS 笔记：工程化
               </a>
             
           </div>
@@ -384,8 +369,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/18/CSS笔记：浮动/" rel="prev" title="CSS 笔记：浮动">
-                CSS 笔记：浮动 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/25/JS笔记：代码风格/" rel="prev" title="JS 笔记：代码风格">
+                JS 笔记：代码风格 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

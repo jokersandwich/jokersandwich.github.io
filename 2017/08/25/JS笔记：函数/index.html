@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="description" content="函数声明和函数表达式函数声明会提升，函数表达式不会。 console.log([typeof add, typeof sub]); // [&amp;quot;function&amp;quot;, &amp;quot;undefined&amp;quot;] function add(x, y) { return x + y; } var sub = function(x, y) { return x - y; } 闭包闭包通">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：文本样式">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：文本样式/index.html">
+<meta property="og:title" content="JS 笔记：函数">
+<meta property="og:url" content="http://yoursite.com/2017/08/25/JS笔记：函数/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:updated_time" content="2017-08-17T22:53:08.675Z">
+<meta property="og:description" content="函数声明和函数表达式函数声明会提升，函数表达式不会。 console.log([typeof add, typeof sub]); // [&amp;quot;function&amp;quot;, &amp;quot;undefined&amp;quot;] function add(x, y) { return x + y; } var sub = function(x, y) { return x - y; } 闭包闭包通">
+<meta property="og:updated_time" content="2017-08-24T23:02:33.410Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：文本样式">
-<meta name="twitter:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="twitter:title" content="JS 笔记：函数">
+<meta name="twitter:description" content="函数声明和函数表达式函数声明会提升，函数表达式不会。 console.log([typeof add, typeof sub]); // [&amp;quot;function&amp;quot;, &amp;quot;undefined&amp;quot;] function add(x, y) { return x + y; } var sub = function(x, y) { return x - y; } 闭包闭包通">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/25/JS笔记：函数/"/>
 
 
 
 
 
-  <title>CSS 笔记：文本样式 | jokersandwich</title>
+  <title>JS 笔记：函数 | jokersandwich</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：文本样式</h1>
+          <h1 class="post-title" itemprop="name headline">JS 笔记：函数</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T05:28:39+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:27+08:00">
+                2017-08-25
               </time>
             
 
@@ -319,25 +319,26 @@
       
 
       
-        <p><strong>通用字体族</strong><br>Serif 衬线体：Georgia、宋体<br>Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑<br>Cursive 手写体：Caflisch Script、楷体<br>Fantasy 梦幻字体：Comic Sans MS<br>Monospace 等宽字体：Consolas、Courier、中文字体<br><code>h1 { font-family: Helvetica, sans-serif; } /* 没有 Helvetica 时，系统根据通用字体族匹配一个字体 */</code></p>
-<p><strong>font-family 使用</strong><br>英文字体放在中文字体前面。（因为中文字体包含英文，会把英文设置成比如微软雅黑）<br>最后总是添加通用字体族。</p>
-<p><strong>font-size</strong><br>绝对值：xx-small, x-small, small, medium, large, x-large, xx-large<br>相对值：larger, smaller<br>百分数：相对于父元素计算值<br>长度：px, em<br>初始值为 medium（由浏览器设置决定，一般 16px）</p>
-<p><strong>em</strong><br>元素的 font-size 属性是相对于父元素的 font-size 的计算值。<br>其它属性是相对于元素本身的 font-size 的计算值。<br><code>h2 { font-size: 1.5em; margin-bottom: 1em; }</code></p>
-<p><strong>line-height</strong><br>段落文字一般取值 1.4~1.8<br><code>p { line-height: 1.5 }</code></p>
-<p><strong>font 缩写</strong><br><code>h1 { font: bold 14px/1.7 Helvetica, sans-serif; } /* 斜体 粗细 大小/行高 字体族 */</code></p>
-<p><strong>Web Fonts</strong></p>
-<pre><code>@font-face {
-    font-family: &apos;Lobster&apos;;
-    src: local(&apos;Lobster&apos;),
-         local(&apos;Lobster-Regular&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff2) format(&apos;woff2&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff&apos;) format(&apos;woff&apos;);
+        <p><strong>函数声明和函数表达式</strong><br>函数声明会提升，函数表达式不会。</p>
+<pre><code>console.log([typeof add, typeof sub]); // [&quot;function&quot;, &quot;undefined&quot;]
+function add(x, y) { return x + y; }
+var sub = function(x, y) { return x - y; }
+</code></pre><p><strong>闭包</strong><br>闭包通常用来创建内部变量，使得这些变量不能被外部随意修改，同时又可以通过指定的函数接口来操作。 </p>
+<p><strong>闭包作用域</strong><br>用IIFE产生的闭包模拟块级作用域：</p>
+<pre><code>for(var i = 0; i &lt; 10; i++) {
+    (function(i) {
+        setTimeout(function() { console.log(i); }, 100 * i);
+    })(i)
 }
-h1 { font-familt: &apos;Lobster&apos;, cursive; }
-</code></pre><p><strong>Web fonts 链接</strong><br><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a><br><a href="https://cdn.baomitu.com/" target="_blank" rel="external">Baomitu CDN</a><br><a href="http://font-spider.org/" target="_blank" rel="external">Font Spider</a></p>
-<p><strong>text-align</strong><br>justify 是两端对齐，但最后一行/单独一行不会起作用。<br><code>p { text-align: justify; }</code></p>
-<p><strong>white-space</strong><br>指定空白符如何处理，取值为 normal、nowrap、pre 等。</p>
-<p><strong>word-break</strong><br>指定是否允许再单词中间换行，取值为 normal、break-all、break-word 等。</p>
+</code></pre><p>es6:</p>
+<pre><code>for(let i = 0; i &lt; 10; i++) {
+    setTimeout(function() { console.log(i); }, 100 * i);
+}
+</code></pre><p><strong>this</strong><br>全局范围：指全局对象，浏览器中指 window。<br>对象的方法：指这个对象。<br>构造函数：指新对象。<br>call/apply：由参数指定。</p>
+<p><strong>异步</strong><br>Timer<br>事件<br>获取数据 API<br>Promise<br>其它异步模型</p>
+<p><strong>数据抽象和过程抽象</strong><br>数据抽象：<br>define: f -&gt; dataFormF = f(data)<br>define: g -&gt; result = g(dataFormF)<br>过程抽象：<br>define: f -&gt; dateFormF = f(data)<br>define: g -&gt; k = g(f), result = k(data)</p>
+<p><strong>高阶函数</strong><br>把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式。<br>（也可以理解为操作函数的函数）</p>
+<p><strong>函数的本质</strong><br>封装过程，开放接口。<br>好的程序涉及是面向接口编程，而不是面向实现编程。<br>（需要使用者理解实现的代码不是好代码）</p>
 
       
     </div>
@@ -374,8 +375,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/17/CSS笔记：概念和简单选择器/" rel="next" title="CSS 笔记：概念和简单选择器">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：概念和简单选择器
+              <a href="/2017/08/25/JS笔记：变量、值与类型/" rel="next" title="JS 笔记：变量、值与类型">
+                <i class="fa fa-chevron-left"></i> JS 笔记：变量、值与类型
               </a>
             
           </div>
@@ -384,8 +385,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/18/CSS笔记：浮动/" rel="prev" title="CSS 笔记：浮动">
-                CSS 笔记：浮动 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/25/JS笔记：DOM & BOM/" rel="prev" title="JS 笔记：DOM & BOM">
+                JS 笔记：DOM & BOM <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

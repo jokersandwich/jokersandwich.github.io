@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="description" content="模式1：Behavior从交互需求出发设计一组“动作行为”，在主题对象上应用和扩展这些行为。 模式2：Adapter追对不同底层实现统一接口的外部接口，让业务层面的代码可以适应不同的底层实现。 模式3：Obsever同步多个对象的状态变化，解耦各个对象之间的依赖。 模式4：Mediator将命令传递给所有订阅者，与订阅者们维持依赖关系，从而让订阅者彼此之间相互独立。 模式5：Omposite对已有">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：文本样式">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：文本样式/index.html">
+<meta property="og:title" content="JS 笔记：常用设计模式和组件开发">
+<meta property="og:url" content="http://yoursite.com/2017/08/25/JS笔记：常用设计模式和组件开发/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:updated_time" content="2017-08-17T22:53:08.675Z">
+<meta property="og:description" content="模式1：Behavior从交互需求出发设计一组“动作行为”，在主题对象上应用和扩展这些行为。 模式2：Adapter追对不同底层实现统一接口的外部接口，让业务层面的代码可以适应不同的底层实现。 模式3：Obsever同步多个对象的状态变化，解耦各个对象之间的依赖。 模式4：Mediator将命令传递给所有订阅者，与订阅者们维持依赖关系，从而让订阅者彼此之间相互独立。 模式5：Omposite对已有">
+<meta property="og:updated_time" content="2017-08-24T23:39:49.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：文本样式">
-<meta name="twitter:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="twitter:title" content="JS 笔记：常用设计模式和组件开发">
+<meta name="twitter:description" content="模式1：Behavior从交互需求出发设计一组“动作行为”，在主题对象上应用和扩展这些行为。 模式2：Adapter追对不同底层实现统一接口的外部接口，让业务层面的代码可以适应不同的底层实现。 模式3：Obsever同步多个对象的状态变化，解耦各个对象之间的依赖。 模式4：Mediator将命令传递给所有订阅者，与订阅者们维持依赖关系，从而让订阅者彼此之间相互独立。 模式5：Omposite对已有">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/25/JS笔记：常用设计模式和组件开发/"/>
 
 
 
 
 
-  <title>CSS 笔记：文本样式 | jokersandwich</title>
+  <title>JS 笔记：常用设计模式和组件开发 | jokersandwich</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：常用设计模式和组件开发/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：文本样式</h1>
+          <h1 class="post-title" itemprop="name headline">JS 笔记：常用设计模式和组件开发</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T05:28:39+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:40+08:00">
+                2017-08-25
               </time>
             
 
@@ -319,25 +319,18 @@
       
 
       
-        <p><strong>通用字体族</strong><br>Serif 衬线体：Georgia、宋体<br>Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑<br>Cursive 手写体：Caflisch Script、楷体<br>Fantasy 梦幻字体：Comic Sans MS<br>Monospace 等宽字体：Consolas、Courier、中文字体<br><code>h1 { font-family: Helvetica, sans-serif; } /* 没有 Helvetica 时，系统根据通用字体族匹配一个字体 */</code></p>
-<p><strong>font-family 使用</strong><br>英文字体放在中文字体前面。（因为中文字体包含英文，会把英文设置成比如微软雅黑）<br>最后总是添加通用字体族。</p>
-<p><strong>font-size</strong><br>绝对值：xx-small, x-small, small, medium, large, x-large, xx-large<br>相对值：larger, smaller<br>百分数：相对于父元素计算值<br>长度：px, em<br>初始值为 medium（由浏览器设置决定，一般 16px）</p>
-<p><strong>em</strong><br>元素的 font-size 属性是相对于父元素的 font-size 的计算值。<br>其它属性是相对于元素本身的 font-size 的计算值。<br><code>h2 { font-size: 1.5em; margin-bottom: 1em; }</code></p>
-<p><strong>line-height</strong><br>段落文字一般取值 1.4~1.8<br><code>p { line-height: 1.5 }</code></p>
-<p><strong>font 缩写</strong><br><code>h1 { font: bold 14px/1.7 Helvetica, sans-serif; } /* 斜体 粗细 大小/行高 字体族 */</code></p>
-<p><strong>Web Fonts</strong></p>
-<pre><code>@font-face {
-    font-family: &apos;Lobster&apos;;
-    src: local(&apos;Lobster&apos;),
-         local(&apos;Lobster-Regular&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff2) format(&apos;woff2&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff&apos;) format(&apos;woff&apos;);
-}
-h1 { font-familt: &apos;Lobster&apos;, cursive; }
-</code></pre><p><strong>Web fonts 链接</strong><br><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a><br><a href="https://cdn.baomitu.com/" target="_blank" rel="external">Baomitu CDN</a><br><a href="http://font-spider.org/" target="_blank" rel="external">Font Spider</a></p>
-<p><strong>text-align</strong><br>justify 是两端对齐，但最后一行/单独一行不会起作用。<br><code>p { text-align: justify; }</code></p>
-<p><strong>white-space</strong><br>指定空白符如何处理，取值为 normal、nowrap、pre 等。</p>
-<p><strong>word-break</strong><br>指定是否允许再单词中间换行，取值为 normal、break-all、break-word 等。</p>
+        <p><strong>模式1：Behavior</strong><br>从交互需求出发设计一组“动作行为”，在主题对象上应用和扩展这些行为。</p>
+<p><strong>模式2：Adapter</strong><br>追对不同底层实现统一接口的外部接口，让业务层面的代码可以适应不同的底层实现。</p>
+<p><strong>模式3：Obsever</strong><br>同步多个对象的状态变化，解耦各个对象之间的依赖。</p>
+<p><strong>模式4：Mediator</strong><br>将命令传递给所有订阅者，与订阅者们维持依赖关系，从而让订阅者彼此之间相互独立。</p>
+<p><strong>模式5：Omposite</strong><br>对已有组件/库/功能的组合使用，提升代码复用性的最常用手段。</p>
+<p><strong>模式6：Partial Application</strong><br>Function.prototype.bind，部分应用/固化参数</p>
+<p><strong>模式7：Decorate</strong><br>在原有 API 基础上增加额外的功能，不改变底层库的情况下扩展功能的一种模式。</p>
+<p><strong>模式8：Proxy</strong><br>保持原有 API 功能不变，改变执行过程和结果，不改变底层库的情况下获得不同执行结果的手段。</p>
+<p><strong>模式9：Aspect</strong><br>对代码执行的过程进行监测和修改，不改变代码主体执行流程的情况下控制执行过程。<br>（preventDefault()、Symblos…）</p>
+<p><strong>Decorate、Proxy 和 Aspect 的联系</strong><br>Decorate 强调的是声明和定义。<br>Proxy 强调的是功能。<br>Aspect 强调的是运行过程。<br>动态语言可以用 Decorate 来实现 Proxy 和 Aspect。</p>
+<p><strong>模式10：Lazy load</strong><br>一些加载耗时的资源进行分段、异步加载，提升前端性能，减少相应用户的时间，某些情况下减少网页流量和带宽消耗。</p>
+<p><strong>总结</strong><br>我们所做的一切都是为了提升抽象程度和灵活性，从而改善我们的代码质量，降低维护成本。</p>
 
       
     </div>
@@ -374,8 +367,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/17/CSS笔记：概念和简单选择器/" rel="next" title="CSS 笔记：概念和简单选择器">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：概念和简单选择器
+              <a href="/2017/08/25/JS笔记：服务器与HTTP基础/" rel="next" title="JS 笔记：服务器与HTTP基础">
+                <i class="fa fa-chevron-left"></i> JS 笔记：服务器与HTTP基础
               </a>
             
           </div>
@@ -384,8 +377,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/18/CSS笔记：浮动/" rel="prev" title="CSS 笔记：浮动">
-                CSS 笔记：浮动 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/25/JS笔记：前端工程化/" rel="prev" title="JS 笔记：前端工程化">
+                JS 笔记：前端工程化 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

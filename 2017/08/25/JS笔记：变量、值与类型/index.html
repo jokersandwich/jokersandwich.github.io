@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="description" content="数据类型number, strign, boolean, null, undefined, object 变量提升变量提升即将变量声明提升到它所在作用域的最开始的部分。 console.log(global); // undefined var global = &amp;apos;global&amp;apos;; console.log(global); // global function fn () {">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：文本样式">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：文本样式/index.html">
+<meta property="og:title" content="JS 笔记：变量、值与类型">
+<meta property="og:url" content="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
-<meta property="og:updated_time" content="2017-08-17T22:53:08.675Z">
+<meta property="og:description" content="数据类型number, strign, boolean, null, undefined, object 变量提升变量提升即将变量声明提升到它所在作用域的最开始的部分。 console.log(global); // undefined var global = &amp;apos;global&amp;apos;; console.log(global); // global function fn () {">
+<meta property="og:updated_time" content="2017-08-24T17:01:45.726Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：文本样式">
-<meta name="twitter:description" content="通用字体族Serif 衬线体：Georgia、宋体Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑Cursive 手写体：Caflisch Script、楷体Fantasy 梦幻字体：Comic Sans MSMonospace 等宽字体：Consolas、Courier、中文字体h1 { font-family: Helvetica, sans-serif; } /">
+<meta name="twitter:title" content="JS 笔记：变量、值与类型">
+<meta name="twitter:description" content="数据类型number, strign, boolean, null, undefined, object 变量提升变量提升即将变量声明提升到它所在作用域的最开始的部分。 console.log(global); // undefined var global = &amp;apos;global&amp;apos;; console.log(global); // global function fn () {">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/"/>
 
 
 
 
 
-  <title>CSS 笔记：文本样式 | jokersandwich</title>
+  <title>JS 笔记：变量、值与类型 | jokersandwich</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：文本样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：文本样式</h1>
+          <h1 class="post-title" itemprop="name headline">JS 笔记：变量、值与类型</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T05:28:39+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:12+08:00">
+                2017-08-25
               </time>
             
 
@@ -319,25 +319,53 @@
       
 
       
-        <p><strong>通用字体族</strong><br>Serif 衬线体：Georgia、宋体<br>Sans-Serif 无衬线体：Arial、Helvetica、黑体、微软雅黑<br>Cursive 手写体：Caflisch Script、楷体<br>Fantasy 梦幻字体：Comic Sans MS<br>Monospace 等宽字体：Consolas、Courier、中文字体<br><code>h1 { font-family: Helvetica, sans-serif; } /* 没有 Helvetica 时，系统根据通用字体族匹配一个字体 */</code></p>
-<p><strong>font-family 使用</strong><br>英文字体放在中文字体前面。（因为中文字体包含英文，会把英文设置成比如微软雅黑）<br>最后总是添加通用字体族。</p>
-<p><strong>font-size</strong><br>绝对值：xx-small, x-small, small, medium, large, x-large, xx-large<br>相对值：larger, smaller<br>百分数：相对于父元素计算值<br>长度：px, em<br>初始值为 medium（由浏览器设置决定，一般 16px）</p>
-<p><strong>em</strong><br>元素的 font-size 属性是相对于父元素的 font-size 的计算值。<br>其它属性是相对于元素本身的 font-size 的计算值。<br><code>h2 { font-size: 1.5em; margin-bottom: 1em; }</code></p>
-<p><strong>line-height</strong><br>段落文字一般取值 1.4~1.8<br><code>p { line-height: 1.5 }</code></p>
-<p><strong>font 缩写</strong><br><code>h1 { font: bold 14px/1.7 Helvetica, sans-serif; } /* 斜体 粗细 大小/行高 字体族 */</code></p>
-<p><strong>Web Fonts</strong></p>
-<pre><code>@font-face {
-    font-family: &apos;Lobster&apos;;
-    src: local(&apos;Lobster&apos;),
-         local(&apos;Lobster-Regular&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff2) format(&apos;woff2&apos;),
-         url(//lib.baomitu.com/fonts/lobster/lobster-v18-latin-regular.woff&apos;) format(&apos;woff&apos;);
+        <p><strong>数据类型</strong><br>number, strign, boolean, null, undefined, object</p>
+<p><strong>变量提升</strong><br>变量提升即将变量声明提升到它所在作用域的最开始的部分。</p>
+<pre><code>console.log(global); // undefined
+var global = &apos;global&apos;;
+console.log(global); // global
+function fn () {
+　　console.log(a); // undefined
+　　var a = &apos;aaa&apos;;
+　　console.log(a); // aaa
 }
-h1 { font-familt: &apos;Lobster&apos;, cursive; }
-</code></pre><p><strong>Web fonts 链接</strong><br><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts</a><br><a href="https://cdn.baomitu.com/" target="_blank" rel="external">Baomitu CDN</a><br><a href="http://font-spider.org/" target="_blank" rel="external">Font Spider</a></p>
-<p><strong>text-align</strong><br>justify 是两端对齐，但最后一行/单独一行不会起作用。<br><code>p { text-align: justify; }</code></p>
-<p><strong>white-space</strong><br>指定空白符如何处理，取值为 normal、nowrap、pre 等。</p>
-<p><strong>word-break</strong><br>指定是否允许再单词中间换行，取值为 normal、break-all、break-word 等。</p>
+fn();
+</code></pre><p>之所以会是以上的打印结果，是由于变量提升，实际上上面的代码是按照以下来执行的：</p>
+<pre><code>var global; // 变量提升，全局作用域范围内，此时只是声明，并没有赋值
+console.log(global); // undefined
+global = &apos;global&apos;; // 此时才赋值
+console.log(global); // 打印出global
+function fn () {
+　　var a; // 变量提升，函数作用域范围内
+　　console.log(a); // undefined
+　　a = &apos;aaa&apos;;
+　　console.log(a); // aaa
+}
+fn();
+</code></pre><p><strong>Boolean</strong><br>建议采用严格比较，可以通过 !! 将非 boolean 值转为 boolean。<br>布尔操作符 &amp;&amp; 和 || 并不会转换类型。<br>比较操作符总是返回 boolean 类型。</p>
+<pre><code>var result = 1 &amp;&amp; 2;
+console.log([result, !!result]); // [2, true]
+</code></pre><p><strong>Number</strong><br>数值范围：Infinity、Number.MAX_VALUE、Number.MIN_VALUE<br>浮点数精度：<code>console.log(0.2 + 0.4); // 0.6000000000000001</code></p>
+<p><strong>String</strong><br>隐式类型转换：<code>console.log([1+2, &#39;1&#39;+2, &#39;1&#39;-0+2]); // [3, &quot;12&quot;, 3]</code><br>转整数：<code>console.log(parseInt(&#39;100abc&#39;, 2)); // 100</code><br>转浮点数：<code>console.log(parseFloat(&#39;12.3e5xx&#39;); // 1230000;</code></p>
+<p><strong>对象的拷贝</strong><br>直接引用：<code>let obj2 = obj1; // 改变 obj2，原对象不会变</code><br>浅拷贝：<code>let obj2 = Object.assign({}, obj1); // 改变 obj2，原对象属性不会变，子对象会变</code><br>深拷贝：递归函数实现。 <code>// 原对象不会变</code></p>
+<p><strong>原型链</strong><br><code>__proto__</code> 构建原型链：</p>
+<pre><code>var a = {x: 1}, b = {y: 2}, c = {z: 3};
+b.__proto__ = a;
+c.__proto__ = b;
+</code></pre><p>使用 <code>Object.create</code> 构建原型链：</p>
+<pre><code>var a = {x: 1};
+var b = Object.create(a);
+b.y = 2;
+var c = Object.create(b);
+c.z = 3;
+</code></pre><p>使用构造器方式：（标准）</p>
+<pre><code>function A() { this.x = 1; }
+function B() { this.y = 2; }
+B.prototype = new A();
+function C() { this.z = 3; }
+C.prototype = new B();
+var c = new C();
+</code></pre><p><strong>内置类型</strong><br>Object, Function, Array, Date, Math, Regex, Error, Promise…</p>
 
       
     </div>
@@ -374,8 +402,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/17/CSS笔记：概念和简单选择器/" rel="next" title="CSS 笔记：概念和简单选择器">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：概念和简单选择器
+              <a href="/2017/08/25/JS笔记：代码风格/" rel="next" title="JS 笔记：代码风格">
+                <i class="fa fa-chevron-left"></i> JS 笔记：代码风格
               </a>
             
           </div>
@@ -384,8 +412,8 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/08/18/CSS笔记：浮动/" rel="prev" title="CSS 笔记：浮动">
-                CSS 笔记：浮动 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/25/JS笔记：函数/" rel="prev" title="JS 笔记：函数">
+                JS 笔记：函数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

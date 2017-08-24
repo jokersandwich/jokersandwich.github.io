@@ -256,6 +256,1002 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：前端工程化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：前端工程化/" itemprop="url">JS 笔记：前端工程化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:44+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>前端工程化</strong><br>用工程化思维和工具来系统地解决前端开发过程中遇到的通用问题，从而提升开发效率，增加代码的可扩展性和可维护性。</p>
+<p><strong>解决问题</strong><br>多人写作问题（规范、流程、模块、版本管理）<br>效率优化（自动化工具）<br>质量优化（单元测试、集成测试）<br>性能优化（合并部署工具）<br>安全性（转码、防御 xss 等等）</p>
+<p><strong>如何工程化</strong><br>1.确定开发调试的项目目录结构<br>2.规划部署上线的产品目录结构<br>3.根据开发环境来设计工作流<br>4.工具选型<br>5.撰写流程脚本<br>6.测试流程脚本<br>7.整理文档和其他工具</p>
+<p><strong>目录结构</strong><br><img width="400px" src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.jpg" alt="目录结构"></p>
+<p><strong>开发环境和工作流</strong><br><img width="400px" src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E5%92%8C%E5%B7%A5%E4%BD%9C%E6%B5%81.jpg" alt="开发环境和工作流"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：常用设计模式和组件开发/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：常用设计模式和组件开发/" itemprop="url">JS 笔记：常用设计模式和组件开发</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:40+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>模式1：Behavior</strong><br>从交互需求出发设计一组“动作行为”，在主题对象上应用和扩展这些行为。</p>
+<p><strong>模式2：Adapter</strong><br>追对不同底层实现统一接口的外部接口，让业务层面的代码可以适应不同的底层实现。</p>
+<p><strong>模式3：Obsever</strong><br>同步多个对象的状态变化，解耦各个对象之间的依赖。</p>
+<p><strong>模式4：Mediator</strong><br>将命令传递给所有订阅者，与订阅者们维持依赖关系，从而让订阅者彼此之间相互独立。</p>
+<p><strong>模式5：Omposite</strong><br>对已有组件/库/功能的组合使用，提升代码复用性的最常用手段。</p>
+<p><strong>模式6：Partial Application</strong><br>Function.prototype.bind，部分应用/固化参数</p>
+<p><strong>模式7：Decorate</strong><br>在原有 API 基础上增加额外的功能，不改变底层库的情况下扩展功能的一种模式。</p>
+<p><strong>模式8：Proxy</strong><br>保持原有 API 功能不变，改变执行过程和结果，不改变底层库的情况下获得不同执行结果的手段。</p>
+<p><strong>模式9：Aspect</strong><br>对代码执行的过程进行监测和修改，不改变代码主体执行流程的情况下控制执行过程。<br>（preventDefault()、Symblos…）</p>
+<p><strong>Decorate、Proxy 和 Aspect 的联系</strong><br>Decorate 强调的是声明和定义。<br>Proxy 强调的是功能。<br>Aspect 强调的是运行过程。<br>动态语言可以用 Decorate 来实现 Proxy 和 Aspect。</p>
+<p><strong>模式10：Lazy load</strong><br>一些加载耗时的资源进行分段、异步加载，提升前端性能，减少相应用户的时间，某些情况下减少网页流量和带宽消耗。</p>
+<p><strong>总结</strong><br>我们所做的一切都是为了提升抽象程度和灵活性，从而改善我们的代码质量，降低维护成本。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：服务器与HTTP基础/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：服务器与HTTP基础/" itemprop="url">JS 笔记：服务器与HTTP基础</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:35+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>URI 和 URL</strong><br>URI：统一资源标识符<br>URL：统一资源定位符<br><img width="700px" src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/URL.jpg" alt="URL"></p>
+<p><strong>优化</strong><br>1.HTTP 对资源请求有没有启用 Cache。<br>2.HTTP 请求内容是否经过 Gzip，比 CSS 压缩很多倍。<br>3.其它细枝末节优化。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：DOM & BOM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：DOM & BOM/" itemprop="url">JS 笔记：DOM & BOM</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:31+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>事件绑定</strong><br>行内绑定：<code>&lt;input type=&quot;button&quot; onclick=&quot;function();&quot; /&gt;</code><br>DOM 绑定：<code>btn.onclick = function();</code><br>事件监听：<code>btn.addEventListener(&#39;click&#39;, function());</code></p>
+<p><strong>事件流</strong><br><a href="http://jsbin.com/exezex/4/edit?css,js,output" target="_blank" rel="external">动画演示</a><br><img width="400px" src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E6%8D%95%E8%8E%B7%E5%92%8C%E5%86%92%E6%B3%A1.png" alt="事件流"></p>
+<p><strong>捕获阶段</strong><br>当我们在 DOM 树的某个节点发生了一些操作（例如单击、鼠标移动上去），就会有一个事件发射过去。这个事件从 Window 发出，不断经过下级节点直到目标节点。在到达目标节点之前的过程，就是捕获阶段（Capture Phase）。<br><code>btn.addEventListener(&#39;click&#39;, function(), true); // 监听捕获阶段，从顶层到目标依次处理事件</code></p>
+<p><strong>目标阶段</strong><br>事件到了事件触发目标节点那里，最终在目标节点上触发这个事件，就是目标阶段。</p>
+<p><strong>冒泡阶段</strong><br>当事件达到目标节点之后，就会沿着原路返回，由于这个过程类似水泡从底部浮到顶部，所以称作冒泡阶段。<br><code>btn.addEventListener(&#39;click&#39;, function()); // 默认监听冒泡阶段，从目标到顶层依次处理事件</code></p>
+<p><strong>停止事件冒泡</strong><br><code>event.stopPropagation(); // 监听事件节点，只在目标节点处理事件</code></p>
+<p><strong>事件代理</strong><br>因为事件有冒泡机制，所有子节点的事件都会顺着父级节点跑回去，所以我们可以通过监听父级节点来实现监听子节点的功能，这就是事件代理。<br>优势：<br>1.减少事件绑定，提升性能。<br>2.动态变化的 DOM 结构，仍然可以监听。</p>
+<p><strong>UI 组件设计</strong><br>1.结构设计<br>2.API 设计<br>3.控制流设计</p>
+<p><strong>浏览器常用 API</strong><br>alert/confirm, Location, navigator.userAgent, Cookie, Storage, XHR(Ajax), WebSockets, Canvas</p>
+<p><strong>Cookie</strong><br>网站跟踪用户行为，服务器用以标记 Session<br>少量数据，跟随 HTTP 请求（header）发送<br>可设置过期时间<br>网站 Cookie 数量有限制<br>支持 http-only<br>JavaScript 原生的 Cookie API 不好用</p>
+<p><strong>Storage</strong><br>可以储存的数据量比较大，但仍有限制，别滥用<br>数据格式为字符串，可以用 JOSN 解析<br>有 LocalStorage 和 SessionStorage 两种类型，默认无过期时间<br>并不会随着 HTTP 请求发给服务器</p>
+<p><strong>Canvas</strong><br>绘制图形<br>处理图片（必须是同域）<br>高性能动画<br>2D 游戏</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：函数/" itemprop="url">JS 笔记：函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:27+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>函数声明和函数表达式</strong><br>函数声明会提升，函数表达式不会。</p>
+<pre><code>console.log([typeof add, typeof sub]); // [&quot;function&quot;, &quot;undefined&quot;]
+function add(x, y) { return x + y; }
+var sub = function(x, y) { return x - y; }
+</code></pre><p><strong>闭包</strong><br>闭包通常用来创建内部变量，使得这些变量不能被外部随意修改，同时又可以通过指定的函数接口来操作。 </p>
+<p><strong>闭包作用域</strong><br>用IIFE产生的闭包模拟块级作用域：</p>
+<pre><code>for(var i = 0; i &lt; 10; i++) {
+    (function(i) {
+        setTimeout(function() { console.log(i); }, 100 * i);
+    })(i)
+}
+</code></pre><p>es6:</p>
+<pre><code>for(let i = 0; i &lt; 10; i++) {
+    setTimeout(function() { console.log(i); }, 100 * i);
+}
+</code></pre><p><strong>this</strong><br>全局范围：指全局对象，浏览器中指 window。<br>对象的方法：指这个对象。<br>构造函数：指新对象。<br>call/apply：由参数指定。</p>
+<p><strong>异步</strong><br>Timer<br>事件<br>获取数据 API<br>Promise<br>其它异步模型</p>
+<p><strong>数据抽象和过程抽象</strong><br>数据抽象：<br>define: f -&gt; dataFormF = f(data)<br>define: g -&gt; result = g(dataFormF)<br>过程抽象：<br>define: f -&gt; dateFormF = f(data)<br>define: g -&gt; k = g(f), result = k(data)</p>
+<p><strong>高阶函数</strong><br>把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式。<br>（也可以理解为操作函数的函数）</p>
+<p><strong>函数的本质</strong><br>封装过程，开放接口。<br>好的程序涉及是面向接口编程，而不是面向实现编程。<br>（需要使用者理解实现的代码不是好代码）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：变量、值与类型/" itemprop="url">JS 笔记：变量、值与类型</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:12+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>数据类型</strong><br>number, strign, boolean, null, undefined, object</p>
+<p><strong>变量提升</strong><br>变量提升即将变量声明提升到它所在作用域的最开始的部分。</p>
+<pre><code>console.log(global); // undefined
+var global = &apos;global&apos;;
+console.log(global); // global
+function fn () {
+　　console.log(a); // undefined
+　　var a = &apos;aaa&apos;;
+　　console.log(a); // aaa
+}
+fn();
+</code></pre><p>之所以会是以上的打印结果，是由于变量提升，实际上上面的代码是按照以下来执行的：</p>
+<pre><code>var global; // 变量提升，全局作用域范围内，此时只是声明，并没有赋值
+console.log(global); // undefined
+global = &apos;global&apos;; // 此时才赋值
+console.log(global); // 打印出global
+function fn () {
+　　var a; // 变量提升，函数作用域范围内
+　　console.log(a); // undefined
+　　a = &apos;aaa&apos;;
+　　console.log(a); // aaa
+}
+fn();
+</code></pre><p><strong>Boolean</strong><br>建议采用严格比较，可以通过 !! 将非 boolean 值转为 boolean。<br>布尔操作符 &amp;&amp; 和 || 并不会转换类型。<br>比较操作符总是返回 boolean 类型。</p>
+<pre><code>var result = 1 &amp;&amp; 2;
+console.log([result, !!result]); // [2, true]
+</code></pre><p><strong>Number</strong><br>数值范围：Infinity、Number.MAX_VALUE、Number.MIN_VALUE<br>浮点数精度：<code>console.log(0.2 + 0.4); // 0.6000000000000001</code></p>
+<p><strong>String</strong><br>隐式类型转换：<code>console.log([1+2, &#39;1&#39;+2, &#39;1&#39;-0+2]); // [3, &quot;12&quot;, 3]</code><br>转整数：<code>console.log(parseInt(&#39;100abc&#39;, 2)); // 100</code><br>转浮点数：<code>console.log(parseFloat(&#39;12.3e5xx&#39;); // 1230000;</code></p>
+<p><strong>对象的拷贝</strong><br>直接引用：<code>let obj2 = obj1; // 改变 obj2，原对象不会变</code><br>浅拷贝：<code>let obj2 = Object.assign({}, obj1); // 改变 obj2，原对象属性不会变，子对象会变</code><br>深拷贝：递归函数实现。 <code>// 原对象不会变</code></p>
+<p><strong>原型链</strong><br><code>__proto__</code> 构建原型链：</p>
+<pre><code>var a = {x: 1}, b = {y: 2}, c = {z: 3};
+b.__proto__ = a;
+c.__proto__ = b;
+</code></pre><p>使用 <code>Object.create</code> 构建原型链：</p>
+<pre><code>var a = {x: 1};
+var b = Object.create(a);
+b.y = 2;
+var c = Object.create(b);
+c.z = 3;
+</code></pre><p>使用构造器方式：（标准）</p>
+<pre><code>function A() { this.x = 1; }
+function B() { this.y = 2; }
+B.prototype = new A();
+function C() { this.z = 3; }
+C.prototype = new B();
+var c = new C();
+</code></pre><p><strong>内置类型</strong><br>Object, Function, Array, Date, Math, Regex, Error, Promise…</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：代码风格/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：代码风格/" itemprop="url">JS 笔记：代码风格</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:07+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>首先</strong><br>代码是给人阅读的，只是偶尔让计算机执行一下。</p>
+<p><strong>狭义</strong><br>代码的格式（包括缩进、大括号、分号、换行、空行、空格）</p>
+<p><strong>广义</strong><br>目录结构和文件名、变量命名、文档规范。</p>
+<p><strong>六种常见的代码风格</strong><br><a href="http://geek.csdn.net/news/detail/3394" target="_blank" rel="external">计算机一年级学生写的代码与一只猫写的代码有什么不同？</a></p>
+<p><strong>一些特殊的 JS“风格”</strong><br>IIFE（Immediately-Invoked Function Expression）<br>严格模式（use strict）<br>模块</p>
+<p><strong>代码风格检查工具</strong><br>ESLint<br>standard<br>semistandard</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：概述/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：概述/" itemprop="url">JS 笔记：概述</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:02+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>特点</strong><br>动态 + 弱类型<br>解释型或实时编译（JIT）型语言<br>面向对象<br>函数式特征<br>灵活和可扩展性<br>反射与元编程<br>高性能<br>单线程异步非阻塞</p>
+<p><strong>作用</strong><br>改变网页文档元素和属性（通过 DOM）<br>操作浏览器 api（通过 BOM）<br>相应用户行为（事件机制）<br>发送和接受数据（XHR、Fetch、WS）<br>保存数据和状态（Storage）<br>执行异步任务（Timer、Promise）<br>处理数据（ArrayBuffer、TypedArray）<br>操作文件（File API）</p>
+<p><strong>谁在使用 JavsScript</strong><br>浏览器、node.js、ReactNative、mongoDB/CouchDB、树莓派、COCOS</p>
+<p><strong>兼容性</strong><br><a href="http:kangax.github.io/compat-table/es5/" target="_blank" rel="external">速查表</a><br>方案 1：Shim(<a href="https://github.com/es-shims/es5-shim" target="_blank" rel="external">es5</a> / <a href="https://github.com/es-shims/es6-shim" target="_blank" rel="external">es6</a>) &amp; <a href="https://polyfill.io/" target="_blank" rel="external">Polyfill</a><br>方案 2：Library（实际项目里对于兼容 IE8 以下浏览器建议使用 jQuery）<br>方案 3：Compiler（Babel / JSX / TypeScript）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：工程化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -580,996 +1576,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：响应式设计/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：响应式设计/" itemprop="url">CSS 笔记：响应式设计</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:06:06+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>viewport</strong><br><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></p>
-<p><strong>图片</strong><br>大图随容器自动缩放，保持宽高比。<br><code>img { max-width: 100%; }</code></p>
-<p><strong>背景图片</strong><br>背景为主：background-size: cover<br>图片为主：background-size: contain</p>
-<p><strong>高宽比固定的容器</strong><br><code>div { height: 0; padding-top: xx%; }</code></p>
-<p><strong>两栏自适应布局</strong><br>float 与 BFC<br>绝对定位<br>模拟 table<br>flex 布局</p>
-<p><strong>网格布局，自动换行</strong><br>inline-block + text-align: justify<br>flex</p>
-<p><strong>media query</strong><br>针对不同的屏幕，应用不同的样式<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;m.css&quot; media=&quot;screen and (max-width: 480px)&quot;&gt;</code><br><code>@media screen and (min-width: 480px) { .selector { ... } }</code></p>
-<p><strong>字体设置</strong></p>
-<pre><code>html { font-size: 16px; }
-p { font-size: 1rem; }
-@media screen and (max-width: 1000px) { html { font-size: 14px; } }
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：高级选择器/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：高级选择器/" itemprop="url">CSS 笔记：高级选择器</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:06:03+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>:target 伪类</strong><br>被锚点匹配时的状态。<br><code>p:target { color: red; }</code><br>可以实现内容切换。</p>
-<pre><code>p { display: none; }
-p:target { display: block; }
-</code></pre><p><strong>:nth-child()</strong><br><code>li:nth-child(3n+1) { color: red; }</code><br><code>li:nth-child(odd) { color: red; }</code></p>
-<p><strong>:first-child</strong><br><code>button:first-child { color: red; }</code></p>
-<p><strong>:not()</strong><br><code>button:not(:first-child) { color: blue; }</code></p>
-<p><strong>::first-letter 伪元素</strong><br><code>p::first-letter { font-size: 2em; }</code></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：动画/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：动画/" itemprop="url">CSS 笔记：动画</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:59+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>transform</strong><br>对元素进行平移、旋转、缩放等变换。</p>
-<pre><code>div {
-    transform: translate(100px, 0);
-    transform: rotate(45deg);
-    transform: scale(2, 0.5);
-}
-/*书写顺序影响变换结果*/
-</code></pre><p><strong>transition</strong><br>指定从一个状态到另一个状态如何过渡。<br><code>div { transition: all .5s ease; }</code></p>
-<p><strong>transition 延迟</strong><br>可以实现不同属性的先后变化。<br><code>div { transition: width 1s ease-in, height 1s ease-in 1s; }</code></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：布局/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：布局/" itemprop="url">CSS 笔记：布局</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:56+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>布局方法</strong><br>float, position, inline-block, table, flex, grid</p>
-<p><strong>水平居中</strong><br>行级元素：text-align: center<br>块级元素：margin: auto</p>
-<p><strong>max-width</strong><br>大部分图文内容的网页，布局都可以用 max-width 加 margin: auto。</p>
-<p><strong>垂直居中</strong><br>单行文字：line-height<br>行级盒子：vertical-align: middle<br>绝对定位：top: 50%; left: 50%</p>
-<p><strong>position</strong><br>用 absolute 和 margin 进行两栏布局。</p>
-<pre><code>main { position: relative; }
-article { margin-left: 10em; }
-aside { position: absolute; width: 10em; top: 0; left: 0; }
-</code></pre><p><strong>table</strong><br>用 display 模拟表格布局，宽度自适应。不要使用表格标签布局。</p>
-<pre><code>main { display: table; }
-article { display: table-cell; }
-aside { display: table-cell; }
-</code></pre><p>可用于实现居中效果。<br><code>.container { display: table-cell; text-align: center; vertical-align: middle; }</code></p>
-<p><strong>display: flex</strong><br>将元素变为 Flexbox。</p>
-<p><strong>flex-direction</strong><br>子元素排列方向，取值为 row、row-reverse、column、column-reverse。</p>
-<p><strong>flex-grow</strong><br>元素扩展（占剩余空间）的能力，默认值为 0。</p>
-<p><strong>flex-shrink</strong><br>元素收缩的能力，默认值为 1。</p>
-<p><strong>flex-wrap</strong><br>元素在主轴方向排放时，能否换行，取值为 nowrap、wrap、wrap-reverse。</p>
-<p><strong>justify-content</strong><br>子元素沿主轴方向的摆放，取值为 flex-start、flex-end、center、space-between、space-around。</p>
-<p><strong>align-items</strong><br>子元素在侧轴方向的对齐方式，取值为 flex-start、flex-end、center、baseline、stretch。</p>
-<p><strong>align-self</strong><br>对单独的元素设置对齐方式。</p>
-<p><strong>align-content</strong><br>多行内容在容器内侧轴方向的对齐，取值为 flex-start、flex-end、center、space-between、space-around、stretch。</p>
-<p><strong>order</strong><br>指定摆放时的顺序，默认值为 0。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：排版细节/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：排版细节/" itemprop="url">CSS 笔记：排版细节</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:53+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>strut</strong><br>p 标签中的 img 图片距离底部会有一点距离，原因是文字的 baseline 在 text-bottom 之上。<br><img src="http://ot8ooevw7.bkt.clouddn.com/%E6%8E%92%E7%89%88%E7%BB%86%E8%8A%82.jpg" alt="排版字体细节" width="700px"></p>
-<p><strong>lists style</strong><br>list-item 会生成 Principle Block 和 Marker Box（小圆点）。<br>Marker Box 的内容和位置可以通过 list-style 系列属性指定。</p>
-<p><strong>list-style-type</strong><br>none, disc, circle, square, decimal, lower-roman, upper-roman 等。</p>
-<p><strong>list-style-image</strong><br><code>li { list-style-image: url(https://xxx.com/xxx/xxx.svg }</code></p>
-<p><strong>background-size</strong><br>contain：保持比例，包含完整图片。<br>cover：保持比例，图片填满容器。</p>
-<p><strong>多重阴影</strong><br>一个盒子可以写无限多个阴影（用来复原盒子，画logo、多啦A梦等等）。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：定位与堆叠/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：定位与堆叠/" itemprop="url">CSS 笔记：定位与堆叠</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:38+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>position</strong><br>static：非定位，默认值<br>realative：相对定位（相对自己）<br>absolute：绝对定位，相对非 static 祖先元素定位<br>fixed：相对于视口绝对定位</p>
-<p><strong>line-height</strong><br>只有一行文字需要居中，可以不设置 height，只设置 line-height。<br><code>.box { width: 200px; line-height: 200px; text-align: center; }</code></p>
-<p><strong>z-index 堆叠层次</strong><br>初始值为 auto，可以为负整数、0、正整数，数值越大，越靠近用户。</p>
-<p><strong>堆叠上下文的生成</strong><br>Root 元素<br>z-index 值不为 auto 的定位元素。<br>设置了某些 CSS3 属性的元素，比如 opacity、transform、animation 等。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：盒模型.md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：盒模型.md/" itemprop="url">CSS 笔记：盒模型</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:15+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>margin 折叠</strong><br>相同上下文内，margin 会合并。</p>
-<p><strong>margin 负值</strong><br>盒子之间可以出现重叠。</p>
-<p><strong>box-sizing</strong><br>改变盒模型计算方式，取值为：border-box, content-box。<br>可以用显示继承灵活控制 box-sizing 使用范围：</p>
-<pre><code>* { box-sizing: inherit; }
-html { box-sizing: border-box; }
-div { box-sizing: content-box; }
-</code></pre><p><strong>Viewport</strong><br>浏览器的可视区域</p>
-<p><strong>行级盒</strong><br>行级盒的 margin-top 和 margin-bottom 不会产生效果。<br>行级盒的 padding-top 和 padding-top 不影响布局。</p>
-<p><strong>Generated Content</strong><br>控制元素，可以用于添加图标。</p>
-<pre><code>&lt;i class=&quot;fa fa-comments&apos;&gt;&lt;/i&gt;
-&lt;style&gt;
-    .fa-comments:before { content: &apos;\f086&apos;; }
-&lt;/style&gt;
-/*html 是表述内容和结构，我认为图标不是内容，只是修饰，所以用伪元素控制*/
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：层叠和单位/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：层叠和单位/" itemprop="url">CSS 笔记：层叠和单位</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T06:59:25+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>属性覆盖</strong><br>优先级高的属性覆盖优先级低的属性， 减少了代码量。</p>
-<pre><code>&lt;button class=&quot;btn&quot;&gt;普通按钮&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary&quot;&gt;主要按钮&lt;/button&gt;
-&lt;style&gt;
-    .btn {
-        display: inline-block;
-        padding: .36em .8em;
-        margin-right: .5em;
-        line-height: 1.5;
-        text-align: center;
-        cursor: pointer;
-        border-radius: .3em;
-        border: none;
-        background: #e6e6e6;
-        color: #333;
-    }
-    .btn.btn-primary {
-        color: #fff;
-        background: #218de6;
-    }
-&lt;/style&gt;
-</code></pre><p><strong>相对单位</strong><br>em：相对于该元素的 font-size<br>rem：相对于根元素（html）的 font-size<br>vh：浏览器窗口高度的1%<br>vw：浏览器窗口宽度的1%<br>vmin：vh 和 vw 中的较小者<br>vmax：vh 和 vw 中的较大者</p>
-<p><strong>颜色</strong><br>关键字：blue, lightsteelblue(147种)<br>Hex：#0000ff<br>RGB &amp; RGBA：rgb(0,0,255), rgba(0,0,0,0.5)<br>HSL &amp; HSLA：hsl(0,50%,50%), hsla(300, 50%, 50%, 0.5)<br>HSL 用于形成同一色系，如按钮悬浮时加深颜色。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1614,7 +1625,7 @@ div { box-sizing: content-box; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
