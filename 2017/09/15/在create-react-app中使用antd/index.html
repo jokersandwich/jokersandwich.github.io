@@ -93,16 +93,18 @@
 
 
 
-<meta name="description" content="安装 create-react-app$ npm install -g create-react-app 安装 create-react-app$ create-react-app new-app 创建项目$ cd antd-demo 进入项目 更改  create-react-app 配置$ npm install react-app-rewired --dev 安装自定义配置方案修改 pack">
+<meta name="description" content="安装 create-react-app$ npm install -g create-react-app 安装 create-react-app$ create-react-app new-app 创建新项目$ cd antd-demo 进入项目 更改  create-react-app 默认配置$ npm install react-app-rewired --dev 安装 react-app">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在 create-react-app 中使用 antd">
 <meta property="og:url" content="http://yoursite.com/2017/09/15/在create-react-app中使用antd/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="安装 create-react-app$ npm install -g create-react-app 安装 create-react-app$ create-react-app new-app 创建项目$ cd antd-demo 进入项目 更改  create-react-app 配置$ npm install react-app-rewired --dev 安装自定义配置方案修改 pack">
-<meta property="og:updated_time" content="2017-09-15T09:04:23.097Z">
+<meta property="og:description" content="安装 create-react-app$ npm install -g create-react-app 安装 create-react-app$ create-react-app new-app 创建新项目$ cd antd-demo 进入项目 更改  create-react-app 默认配置$ npm install react-app-rewired --dev 安装 react-app">
+<meta property="og:image" content="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png">
+<meta property="og:updated_time" content="2017-09-15T09:34:05.592Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在 create-react-app 中使用 antd">
-<meta name="twitter:description" content="安装 create-react-app$ npm install -g create-react-app 安装 create-react-app$ create-react-app new-app 创建项目$ cd antd-demo 进入项目 更改  create-react-app 配置$ npm install react-app-rewired --dev 安装自定义配置方案修改 pack">
+<meta name="twitter:description" content="安装 create-react-app$ npm install -g create-react-app 安装 create-react-app$ create-react-app new-app 创建新项目$ cd antd-demo 进入项目 更改  create-react-app 默认配置$ npm install react-app-rewired --dev 安装 react-app">
+<meta name="twitter:image" content="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png">
 
 
 
@@ -319,10 +321,10 @@
       
 
       
-        <p><strong>安装 create-react-app</strong><br><code>$ npm install -g create-react-app</code> 安装 create-react-app<br><code>$ create-react-app new-app</code> 创建项目<br><code>$ cd antd-demo</code> 进入项目</p>
-<p><strong>更改  create-react-app 配置</strong><br><code>$ npm install react-app-rewired --dev</code> 安装自定义配置方案<br>修改 <code>package.json</code> 里的启动配置：</p>
-<pre><code>/* package.json */
-&quot;scripts&quot;: {
+        <p><img src="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png" alt="头图"></p>
+<p><strong>安装 create-react-app</strong><br><code>$ npm install -g create-react-app</code> 安装 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">create-react-app</a><br><code>$ create-react-app new-app</code> 创建新项目<br><code>$ cd antd-demo</code> 进入项目</p>
+<p><strong>更改  create-react-app 默认配置</strong><br><code>$ npm install react-app-rewired --dev</code> 安装 <a href="https://github.com/timarney/react-app-rewired" target="_blank" rel="external">react-app-rewired</a> 插件<br>修改 <code>package.json</code> 里的启动配置：</p>
+<pre><code>&quot;scripts&quot;: {
 -   &quot;start&quot;: &quot;react-scripts start&quot;,
 +   &quot;start&quot;: &quot;react-app-rewired start&quot;,
 -   &quot;build&quot;: &quot;react-scripts build&quot;,
@@ -335,7 +337,7 @@
   // do stuff with the webpack config...
   return config;
 };
-</code></pre><p><strong>安装 antd</strong><br><code>$ npm install antd babel-pluging-import --save</code> 安装 antd 和按需引入插件<br>修改 <code>config-overrides.js</code> 配置：</p>
+</code></pre><p><strong>安装 antd</strong><br><code>$ npm install antd babel-pluging-import --save</code> 安装 <a href="https://ant.design/index-cn" target="_blank" rel="external">antd</a> 和 <a href="https://github.com/ant-design/babel-plugin-import" target="_blank" rel="external">babel-pluging-import</a> 插件<br>修改 <code>config-overrides.js</code> 配置：</p>
 <pre><code>+ const { injectBabelPlugin } = require(&apos;react-app-rewired&apos;);
 
   module.exports = function override(config, env) {
@@ -358,12 +360,12 @@
     }
 
     export default App;
-</code></pre><p><strong>自定义主题（可选）</strong><br>$ npm install react-app-rewire-less –dev 安装 react-app-rewire 的 less 插件</p>
+</code></pre><p><strong>自定义主题（不必要）</strong><br><code>$ npm install react-app-rewire-less --dev</code> 安装 <a href="https://www.npmjs.com/package/react-app-rewire-less" target="_blank" rel="external">react-app-rewire-less</a> 插件</p>
 <p>修改 <code>config-overrides.js</code> 配置：</p>
-<p>  const { injectBabelPlugin } = require(‘react-app-rewired’);</p>
-<ul>
-<li><p>const rewireLess = require(‘react-app-rewire-less’);</p>
-<pre><code>  module.exports = function override(config, env) {
+<pre><code>  const { injectBabelPlugin } = require(&apos;react-app-rewired&apos;);
++ const rewireLess = require(&apos;react-app-rewire-less&apos;);
+
+  module.exports = function override(config, env) {
 -   config = injectBabelPlugin([&apos;import&apos;, { libraryName: &apos;antd&apos;, style: &apos;css&apos; }], config);
 +   config = injectBabelPlugin([&apos;import&apos;, { libraryName: &apos;antd&apos;, style: true }], config);
 +   config = rewireLess(config, env, {
@@ -371,9 +373,7 @@
 +   });
     return config;
   };
-</code></pre></li>
-</ul>
-<p>修改后重启 npm start，如果看到一个绿色的按钮就说明配置成功了。</p>
+</code></pre><p>修改后重启 npm start，如果看到一个绿色的按钮就说明配置成功了。</p>
 
       
     </div>
