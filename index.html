@@ -256,170 +256,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/15/在create-react-app中使用antd/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/15/在create-react-app中使用antd/" itemprop="url">在 create-react-app 中使用 antd</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-15T16:38:35+08:00">
-                2017-09-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="https://os.alipayobjects.com/rmsportal/eMcdBWuZxRbvlvW.png" alt="头图"></p>
-<p><strong>安装 create-react-app</strong><br><code>$ npm install -g create-react-app</code> 安装 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">create-react-app</a><br><code>$ create-react-app new-app</code> 创建新项目<br><code>$ cd antd-demo</code> 进入项目</p>
-<p><strong>更改  create-react-app 默认配置</strong><br><code>$ npm install react-app-rewired --dev</code> 安装 <a href="https://github.com/timarney/react-app-rewired" target="_blank" rel="external">react-app-rewired</a> 插件<br>修改 <code>package.json</code> 里的启动配置：</p>
-<pre><code>&quot;scripts&quot;: {
--   &quot;start&quot;: &quot;react-scripts start&quot;,
-+   &quot;start&quot;: &quot;react-app-rewired start&quot;,
--   &quot;build&quot;: &quot;react-scripts build&quot;,
-+   &quot;build&quot;: &quot;react-app-rewired build&quot;,
--   &quot;test&quot;: &quot;react-scripts test --env=jsdom&quot;,
-+   &quot;test&quot;: &quot;react-app-rewired test --env=jsdom&quot;,
-}
-</code></pre><p>在项目根目录创建一个 <code>config-overrides.js</code> 用于修改默认配置：</p>
-<pre><code>module.exports = function override(config, env) {
-  // do stuff with the webpack config...
-  return config;
-};
-</code></pre><p><strong>安装 antd</strong><br><code>$ npm install antd babel-pluging-import --save</code> 安装 <a href="https://ant.design/index-cn" target="_blank" rel="external">antd</a> 和 <a href="https://github.com/ant-design/babel-plugin-import" target="_blank" rel="external">babel-pluging-import</a> 插件<br>修改 <code>config-overrides.js</code> 配置：</p>
-<pre><code>+ const { injectBabelPlugin } = require(&apos;react-app-rewired&apos;);
-
-  module.exports = function override(config, env) {
-+   config = injectBabelPlugin([&apos;import&apos;, { libraryName: &apos;antd&apos;, style: &apos;css&apos; }], config);
-    return config;
-  };
-</code></pre><p><strong>开始使用</strong><br>修改 <code>src/App.js</code>，引入 antd 的按钮插件：</p>
-<pre><code>    import React, { Component } from &apos;react&apos;;
-    import &apos;./App.css&apos;;
-+   import { Button } from &apos;antd&apos;;
-
-    class App extends Component {
-      render() {
-        return (
-          &lt;div className=&quot;App&quot;&gt;
-            &lt;Button type=&quot;primary&quot;&gt;Button&lt;/Button&gt;
-          &lt;/div&gt;
-        );
-      }
-    }
-
-    export default App;
-</code></pre><p><strong>自定义主题（不必要）</strong><br><code>$ npm install react-app-rewire-less --dev</code> 安装 <a href="https://www.npmjs.com/package/react-app-rewire-less" target="_blank" rel="external">react-app-rewire-less</a> 插件</p>
-<p>修改 <code>config-overrides.js</code> 配置：</p>
-<pre><code>  const { injectBabelPlugin } = require(&apos;react-app-rewired&apos;);
-+ const rewireLess = require(&apos;react-app-rewire-less&apos;);
-
-  module.exports = function override(config, env) {
--   config = injectBabelPlugin([&apos;import&apos;, { libraryName: &apos;antd&apos;, style: &apos;css&apos; }], config);
-+   config = injectBabelPlugin([&apos;import&apos;, { libraryName: &apos;antd&apos;, style: true }], config);
-+   config = rewireLess(config, env, {
-+     modifyVars: { &quot;@primary-color&quot;: &quot;#1DA57A&quot; },
-+   });
-    return config;
-  };
-</code></pre><p>修改后重启 npm start，如果看到一个绿色的按钮就说明配置成功了。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/30/让网站更个性化——selection/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1529,6 +1365,201 @@ var c = new C();
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：工程化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/18/CSS笔记：工程化/" itemprop="url">CSS 笔记：工程化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:06:13+08:00">
+                2017-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>文件结构</strong></p>
+<pre><code>css
+|
+| -- base
+|    | -- normalize.css
+|    | -- mixins.css
+|    | -- layout.css
+|    ` -- variables.css
+|
+| -- modules
+|    | -- button.css
+|    | -- checkbox.css
+|    | -- dialog.css
+|    | -- form.css
+|    | -- input.css
+|    | -- modal.css
+|    | -- pagination.css
+|    | -- radio.css
+|    | -- select.css
+|    | -- tab.css
+|    | -- table.css
+|    | -- textarea.css
+|    ` -- tip.css
+|
+` -- pages
+     | -- index.css
+     | -- page-a.css
+     | -- page-b.css
+     ` -- page-c.css
+</code></pre><p><strong>CSS reset</strong><br>设置 HTML 标签的默认样式，使其在各个浏览器表现基本一致，让默认样式归零。<br>常见设置有 marging、padding、inherit、outline 等。</p>
+<p><strong>normalize.css</strong><br>设置 HTML 标签的默认样式，使其在各个浏览器表现基本一致，保留标签的默认样式。</p>
+<p><strong>CSS 模块原则</strong><br>面向对象（OOCSS）<br>单一职责原则（SRP）<br>开闭原则<br>Don’t Repeat Yourself（DRY）</p>
+<p><strong>面向对象（OOCSS）</strong><br>把基础的样式抽象出来，不一样的地方做继承。</p>
+<pre><code>.btn {
+    display: inline-block;
+    padding: 0.36em 0.8em;
+    margin-right: 0.5em;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+.btn--primary {
+    background-color: #09c;
+    color: #fff;
+}
+</code></pre><p><strong>OOCSS 原则</strong><br>结构和皮肤分离：.bn .btn–primary .btn–info .btn–danger<br>容器和内容分离：<code>.header .btn { color: #fff; } /* 不推荐这样写 */</code></p>
+<p><strong>media object</strong></p>
+<pre><code>.media
+    .media__image
+        .media_object
+    .media__body
+        .media__title
+        .media__description
+</code></pre><p><strong>单一职责原则</strong><br>尽可能细地拆分成可独立复用的组件，通过组合方式使用多个组件。</p>
+<p><strong>开闭原则</strong><br>对扩展开放，对修改关闭。</p>
+<pre><code>.box { display: block; padding: 10px; }
+.content .box { padding: 20px; } /* bad example */
+.box--large { padding: 20px; } /* better example */
+</code></pre><p><strong>DRY 原则</strong></p>
+<pre><code>/* bad example */
+.selector {
+    border-top: 1px solid #fcc;
+    border-left: 1px solid #fcc;
+    border-bottom: 1px solid #fcc;
+}
+/* better example */
+.selector {
+    border: 1px solid #fcc;
+    border-right: none;
+}
+</code></pre><p><strong>命名</strong><br>基于功能：.button/.form/.list/.external-link/.tab-item/（优先使用）<br>基于内容：.news/.user-info/.help/.contact-me（适合中小型网站）<br>基于视觉：.round-image/.nowrap（适合大型网站）<br>建议使用抽象的命名：<br>.warning vs .orange<br>.btn-primary vs .btn-blue<br>.size-large vs .width-200</p>
+<p><strong>BEM</strong><br>CSS 命名规范的一种：Block（模块）、Element（元素）、Modifier（修饰）</p>
+<pre><code>&lt;nav class=&quot;tabs tabs--stacked&quot;&gt;
+    &lt;a class=&quot;tabs__item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;a class=&quot;tabs__item&quot; href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;
+    &lt;a class=&quot;tabs__item&quot; href=&quot;#&quot;&gt;CSS&lt;/a&gt;
+&lt;/nav&gt;
+</code></pre><p><strong>CSS 预处理</strong><br><a href="http://lesscss.org/" target="_blank" rel="external">less</a>, <a href="http://sass-lang.com/" target="_blank" rel="external">Sass</a>, <a href="http://stylus-lang.com/" target="_blank" rel="external">Stylus</a>, <a href="http://postcss.org/" target="_blank" rel="external">PostCSS</a>（CSS 界的 babel）</p>
+<p><strong>import</strong></p>
+<pre><code>/* app.css */
+@import &apos;variables.css&apos;;
+@import &apos;modules/button.css&apos;;
+@import &apos;modules/from.css&apos;;
+</code></pre><p><strong>Plugins</strong><br><a href="http://autoprefixer.github.io/" target="_blank" rel="external">Autoprefixer</a>, <a href="https://stylelint.io/" target="_blank" rel="external">stylelint</a>, <a href="http://cssnext.io/" target="_blank" rel="external">cssnext</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -1578,7 +1609,7 @@ var c = new C();
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>

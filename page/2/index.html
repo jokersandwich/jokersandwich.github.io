@@ -256,201 +256,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：工程化/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：工程化/" itemprop="url">CSS 笔记：工程化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:06:13+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>文件结构</strong></p>
-<pre><code>css
-|
-| -- base
-|    | -- normalize.css
-|    | -- mixins.css
-|    | -- layout.css
-|    ` -- variables.css
-|
-| -- modules
-|    | -- button.css
-|    | -- checkbox.css
-|    | -- dialog.css
-|    | -- form.css
-|    | -- input.css
-|    | -- modal.css
-|    | -- pagination.css
-|    | -- radio.css
-|    | -- select.css
-|    | -- tab.css
-|    | -- table.css
-|    | -- textarea.css
-|    ` -- tip.css
-|
-` -- pages
-     | -- index.css
-     | -- page-a.css
-     | -- page-b.css
-     ` -- page-c.css
-</code></pre><p><strong>CSS reset</strong><br>设置 HTML 标签的默认样式，使其在各个浏览器表现基本一致，让默认样式归零。<br>常见设置有 marging、padding、inherit、outline 等。</p>
-<p><strong>normalize.css</strong><br>设置 HTML 标签的默认样式，使其在各个浏览器表现基本一致，保留标签的默认样式。</p>
-<p><strong>CSS 模块原则</strong><br>面向对象（OOCSS）<br>单一职责原则（SRP）<br>开闭原则<br>Don’t Repeat Yourself（DRY）</p>
-<p><strong>面向对象（OOCSS）</strong><br>把基础的样式抽象出来，不一样的地方做继承。</p>
-<pre><code>.btn {
-    display: inline-block;
-    padding: 0.36em 0.8em;
-    margin-right: 0.5em;
-    border: none;
-    border-radius: 0.3em;
-    cursor: pointer;
-}
-.btn--primary {
-    background-color: #09c;
-    color: #fff;
-}
-</code></pre><p><strong>OOCSS 原则</strong><br>结构和皮肤分离：.bn .btn–primary .btn–info .btn–danger<br>容器和内容分离：<code>.header .btn { color: #fff; } /* 不推荐这样写 */</code></p>
-<p><strong>media object</strong></p>
-<pre><code>.media
-    .media__image
-        .media_object
-    .media__body
-        .media__title
-        .media__description
-</code></pre><p><strong>单一职责原则</strong><br>尽可能细地拆分成可独立复用的组件，通过组合方式使用多个组件。</p>
-<p><strong>开闭原则</strong><br>对扩展开放，对修改关闭。</p>
-<pre><code>.box { display: block; padding: 10px; }
-.content .box { padding: 20px; } /* bad example */
-.box--large { padding: 20px; } /* better example */
-</code></pre><p><strong>DRY 原则</strong></p>
-<pre><code>/* bad example */
-.selector {
-    border-top: 1px solid #fcc;
-    border-left: 1px solid #fcc;
-    border-bottom: 1px solid #fcc;
-}
-/* better example */
-.selector {
-    border: 1px solid #fcc;
-    border-right: none;
-}
-</code></pre><p><strong>命名</strong><br>基于功能：.button/.form/.list/.external-link/.tab-item/（优先使用）<br>基于内容：.news/.user-info/.help/.contact-me（适合中小型网站）<br>基于视觉：.round-image/.nowrap（适合大型网站）<br>建议使用抽象的命名：<br>.warning vs .orange<br>.btn-primary vs .btn-blue<br>.size-large vs .width-200</p>
-<p><strong>BEM</strong><br>CSS 命名规范的一种：Block（模块）、Element（元素）、Modifier（修饰）</p>
-<pre><code>&lt;nav class=&quot;tabs tabs--stacked&quot;&gt;
-    &lt;a class=&quot;tabs__item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
-    &lt;a class=&quot;tabs__item&quot; href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;
-    &lt;a class=&quot;tabs__item&quot; href=&quot;#&quot;&gt;CSS&lt;/a&gt;
-&lt;/nav&gt;
-</code></pre><p><strong>CSS 预处理</strong><br><a href="http://lesscss.org/" target="_blank" rel="external">less</a>, <a href="http://sass-lang.com/" target="_blank" rel="external">Sass</a>, <a href="http://stylus-lang.com/" target="_blank" rel="external">Stylus</a>, <a href="http://postcss.org/" target="_blank" rel="external">PostCSS</a>（CSS 界的 babel）</p>
-<p><strong>import</strong></p>
-<pre><code>/* app.css */
-@import &apos;variables.css&apos;;
-@import &apos;modules/button.css&apos;;
-@import &apos;modules/from.css&apos;;
-</code></pre><p><strong>Plugins</strong><br><a href="http://autoprefixer.github.io/" target="_blank" rel="external">Autoprefixer</a>, <a href="https://stylelint.io/" target="_blank" rel="external">stylelint</a>, <a href="http://cssnext.io/" target="_blank" rel="external">cssnext</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：兼容性/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1565,6 +1370,131 @@ div { box-sizing: content-box; }
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：浮动/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/18/CSS笔记：浮动/" itemprop="url">CSS 笔记：浮动</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T06:54:34+08:00">
+                2017-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>定位模式</strong><br>常规流（Normal Flow）<br>浮动（Float）<br>绝对定位（Absolute Positioning）</p>
+<p><strong>浮动</strong><br>浮动元素会从常规流中脱离，漂到容器左边缘或右边缘，挤开其它元素。</p>
+<p><strong>clear</strong><br>指定元素哪一边不能与之前的浮动框相邻，取值为 left、right、both。</p>
+<p><strong>clearfix</strong><br>在浮动元素父级之后加一个匿名 div 清除浮动。</p>
+<pre><code>.clearfix::after {
+    content: &apos; &apos;;
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+</code></pre><p><strong>块级元素上下文（BFC）</strong><br>BFC 可以通过 overflow: hidden 等方法创建。<br>BFC 可以清除浮动。<br><code>section { overflow: hidden }</code><br>BFC 可以实现双栏布局。</p>
+<pre><code>img { float: left }
+p { overflow: hidden; padding-left: 10px }
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -1614,7 +1544,7 @@ div { box-sizing: content-box; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
