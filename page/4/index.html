@@ -256,6 +256,129 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/hexo创建笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/18/hexo创建笔记/" itemprop="url">Hexo 搭建笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T18:19:48+08:00">
+                2017-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>创建文章</strong></p>
+<p><code>$ hexo n &quot;文章的文件名&quot;</code> 在 source/_posts 目录下找到文章，打开，使用 Markdown 语法写作，保存。<br><code>$ hexo clean</code> （不必要，清除缓存）<br><code>$ hexo g</code> （生成新文章，打包到 public 目录）<br><code>$ hexo s</code> （不必要，打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，可本地预览文章）<br><code>$ hexo d</code> （部署发布）</p>
+<p><strong>更新文章</strong></p>
+<p><code>$ hexo clean</code> （不必要）<br><code>$ hexo g</code><br><code>$ hexo s</code> （不必要）<br><code>$ hexo d</code></p>
+<p><strong>改变主题</strong></p>
+<p>下载主题到 themes 目录<br>修改 _config.yml 配置：<code>theme: &quot;主题名&quot;</code><br>推荐标配主题：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next</a></p>
+<p><strong>Bug</strong></p>
+<p>Q: 执行 <code>$ hexo d</code> 后，出现 <code>error deployer not found:git</code>？<br>A: <code>$ npm install hexo-deployer-git --save</code></p>
+<p>Q: 创建新文章后，页面不显示？<br>A: <code>$ hexo g</code> 把文章生成了吗？检查 public 目录下面有没有生成的文件。</p>
+<p>Q: 执行 <code>$ hexo g</code> 后，生成错误 <code>TypeError: Cannot read property &#39;offset&#39; of null</code>？<br>A: 删除 date 和 tag，只保留 title。</p>
+<p>Q: 执行 ‘$ hexo d’ 后，无法部署到 github？<br>A: 好像现在http不太行了，修改 _config.yml 配置：<code>repo: ssh://git@github.com/jokersandwich/jokersandwich.github.io.git</code></p>
+<p>Q: 在 github 上部署 hexo 后过很久才生效？<br>A: 有时候秒部署，试试看先 <code>$ hexo clean</code> 清除缓存。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/第一篇文章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -408,7 +531,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
