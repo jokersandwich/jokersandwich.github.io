@@ -256,6 +256,121 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：概述/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：概述/" itemprop="url">JS 笔记：概述</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:02+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>特点</strong><br>动态 + 弱类型<br>解释型或实时编译（JIT）型语言<br>面向对象<br>函数式特征<br>灵活和可扩展性<br>反射与元编程<br>高性能<br>单线程异步非阻塞</p>
+<p><strong>作用</strong><br>改变网页文档元素和属性（通过 DOM）<br>操作浏览器 api（通过 BOM）<br>相应用户行为（事件机制）<br>发送和接受数据（XHR、Fetch、WS）<br>保存数据和状态（Storage）<br>执行异步任务（Timer、Promise）<br>处理数据（ArrayBuffer、TypedArray）<br>操作文件（File API）</p>
+<p><strong>谁在使用 JavsScript</strong><br>浏览器、node.js、ReactNative、mongoDB/CouchDB、树莓派、COCOS</p>
+<p><strong>兼容性</strong><br><a href="http:kangax.github.io/compat-table/es5/" target="_blank" rel="external">速查表</a><br>方案 1：Shim(<a href="https://github.com/es-shims/es5-shim" target="_blank" rel="external">es5</a> / <a href="https://github.com/es-shims/es6-shim" target="_blank" rel="external">es6</a>) &amp; <a href="https://polyfill.io/" target="_blank" rel="external">Polyfill</a><br>方案 2：Library（实际项目里对于兼容 IE8 以下浏览器建议使用 jQuery）<br>方案 3：Compiler（Babel / JSX / TypeScript）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：工程化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1431,140 +1546,6 @@ div { box-sizing: content-box; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：层叠和单位/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：层叠和单位/" itemprop="url">CSS 笔记：层叠和单位</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T06:59:25+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>属性覆盖</strong><br>优先级高的属性覆盖优先级低的属性， 减少了代码量。</p>
-<pre><code>&lt;button class=&quot;btn&quot;&gt;普通按钮&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary&quot;&gt;主要按钮&lt;/button&gt;
-&lt;style&gt;
-    .btn {
-        display: inline-block;
-        padding: .36em .8em;
-        margin-right: .5em;
-        line-height: 1.5;
-        text-align: center;
-        cursor: pointer;
-        border-radius: .3em;
-        border: none;
-        background: #e6e6e6;
-        color: #333;
-    }
-    .btn.btn-primary {
-        color: #fff;
-        background: #218de6;
-    }
-&lt;/style&gt;
-</code></pre><p><strong>相对单位</strong><br>em：相对于该元素的 font-size<br>rem：相对于根元素（html）的 font-size<br>vh：浏览器窗口高度的1%<br>vw：浏览器窗口宽度的1%<br>vmin：vh 和 vw 中的较小者<br>vmax：vh 和 vw 中的较大者</p>
-<p><strong>颜色</strong><br>关键字：blue, lightsteelblue(147种)<br>Hex：#0000ff<br>RGB &amp; RGBA：rgb(0,0,255), rgba(0,0,0,0.5)<br>HSL &amp; HSLA：hsl(0,50%,50%), hsla(300, 50%, 50%, 0.5)<br>HSL 用于形成同一色系，如按钮悬浮时加深颜色。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1614,7 +1595,7 @@ div { box-sizing: content-box; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>

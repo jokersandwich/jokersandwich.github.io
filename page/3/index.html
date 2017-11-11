@@ -256,6 +256,140 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：层叠和单位/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/18/CSS笔记：层叠和单位/" itemprop="url">CSS 笔记：层叠和单位</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T06:59:25+08:00">
+                2017-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>属性覆盖</strong><br>优先级高的属性覆盖优先级低的属性， 减少了代码量。</p>
+<pre><code>&lt;button class=&quot;btn&quot;&gt;普通按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;主要按钮&lt;/button&gt;
+&lt;style&gt;
+    .btn {
+        display: inline-block;
+        padding: .36em .8em;
+        margin-right: .5em;
+        line-height: 1.5;
+        text-align: center;
+        cursor: pointer;
+        border-radius: .3em;
+        border: none;
+        background: #e6e6e6;
+        color: #333;
+    }
+    .btn.btn-primary {
+        color: #fff;
+        background: #218de6;
+    }
+&lt;/style&gt;
+</code></pre><p><strong>相对单位</strong><br>em：相对于该元素的 font-size<br>rem：相对于根元素（html）的 font-size<br>vh：浏览器窗口高度的1%<br>vw：浏览器窗口宽度的1%<br>vmin：vh 和 vw 中的较小者<br>vmax：vh 和 vw 中的较大者</p>
+<p><strong>颜色</strong><br>关键字：blue, lightsteelblue(147种)<br>Hex：#0000ff<br>RGB &amp; RGBA：rgb(0,0,255), rgba(0,0,0,0.5)<br>HSL &amp; HSLA：hsl(0,50%,50%), hsla(300, 50%, 50%, 0.5)<br>HSL 用于形成同一色系，如按钮悬浮时加深颜色。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：浮动/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1336,133 +1470,6 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/19/理解RESTful/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/07/19/理解RESTful/" itemprop="url">理解 RESTful</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-19T19:56:29+08:00">
-                2017-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Ivony：用 URL 定位资源，用 HTTP 描述操作。</p>
-<p>徐磊：看 url 就知道要什么，看 http method 就知道干什么，看 http status code 就知道结果如何。</p>
-<p>覃超：URI 使用名词而不是动词，且推荐用复数。</p>
-<p>BAD</p>
-<ul>
-<li>/getProducts</li>
-<li>/listOrders</li>
-<li>/retrieveClientByOrder?orderld=1</li>
-</ul>
-<p>GOOD</p>
-<ul>
-<li>GET /products: will return the list of all products</li>
-<li>POST /products: will add a product to the collection</li>
-<li>GET /products/4: will retrieve product #4</li>
-<li>PATCH/PUT /products/4 will update product #4</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1512,7 +1519,7 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
