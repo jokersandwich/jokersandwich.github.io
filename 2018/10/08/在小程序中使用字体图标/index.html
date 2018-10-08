@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="在 create-react-app 建立的项目下，只需要在 package.json 文件中添加 proxy 属性就可以了，跟 webpack-dev-server 的 proxy 配置一样，如: &amp;quot;proxy&amp;quot;: &amp;quot;http://localhost:9093&amp;quot;">
+<meta name="description" content="准备 svg 格式的图标可以到图标网站下载，或者自己用 Adobe Illustrator 画。 使用 IcoMoon 制作字体进入 IcoMoon 网站，IcoMoon App -&amp;gt; New Project(not necessary) -&amp;gt; Import Icons -&amp;gt; Generate Font -&amp;gt; Download，完成下载。 引入样式文件将下载的 style.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="create-react-app 下解决跨域">
-<meta property="og:url" content="http://yoursite.com/2017/11/12/create-react-app下解决跨域/index.html">
+<meta property="og:title" content="在小程序中使用字体图标">
+<meta property="og:url" content="http://yoursite.com/2018/10/08/在小程序中使用字体图标/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="在 create-react-app 建立的项目下，只需要在 package.json 文件中添加 proxy 属性就可以了，跟 webpack-dev-server 的 proxy 配置一样，如: &amp;quot;proxy&amp;quot;: &amp;quot;http://localhost:9093&amp;quot;">
-<meta property="og:updated_time" content="2017-11-11T20:32:58.066Z">
+<meta property="og:description" content="准备 svg 格式的图标可以到图标网站下载，或者自己用 Adobe Illustrator 画。 使用 IcoMoon 制作字体进入 IcoMoon 网站，IcoMoon App -&amp;gt; New Project(not necessary) -&amp;gt; Import Icons -&amp;gt; Generate Font -&amp;gt; Download，完成下载。 引入样式文件将下载的 style.">
+<meta property="og:updated_time" content="2018-10-08T10:54:35.856Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="create-react-app 下解决跨域">
-<meta name="twitter:description" content="在 create-react-app 建立的项目下，只需要在 package.json 文件中添加 proxy 属性就可以了，跟 webpack-dev-server 的 proxy 配置一样，如: &amp;quot;proxy&amp;quot;: &amp;quot;http://localhost:9093&amp;quot;">
+<meta name="twitter:title" content="在小程序中使用字体图标">
+<meta name="twitter:description" content="准备 svg 格式的图标可以到图标网站下载，或者自己用 Adobe Illustrator 画。 使用 IcoMoon 制作字体进入 IcoMoon 网站，IcoMoon App -&amp;gt; New Project(not necessary) -&amp;gt; Import Icons -&amp;gt; Generate Font -&amp;gt; Download，完成下载。 引入样式文件将下载的 style.">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/12/create-react-app下解决跨域/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/08/在小程序中使用字体图标/"/>
 
 
 
 
 
-  <title>create-react-app 下解决跨域 | jokersandwich</title>
+  <title>在小程序中使用字体图标 | jokersandwich</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/12/create-react-app下解决跨域/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/在小程序中使用字体图标/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">create-react-app 下解决跨域</h1>
+          <h1 class="post-title" itemprop="name headline">在小程序中使用字体图标</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-12T04:23:33+08:00">
-                2017-11-12
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-08T18:47:32+08:00">
+                2018-10-08
               </time>
             
 
@@ -319,9 +319,13 @@
       
 
       
-        <p>在 <code>create-react-app</code> 建立的项目下，只需要在 <code>package.json</code> 文件中添加 <code>proxy</code> 属性就可以了，跟 webpack-dev-server 的 proxy 配置一样，如:</p>
-<pre><code>&quot;proxy&quot;: &quot;http://localhost:9093&quot;
-</code></pre>
+        <p><strong>准备 svg 格式的图标</strong><br>可以到图标网站下载，或者自己用 Adobe Illustrator 画。</p>
+<p><strong>使用 IcoMoon 制作字体</strong><br>进入 IcoMoon 网站，IcoMoon App -&gt; New Project(not necessary) -&gt; Import Icons -&gt; Generate Font -&gt; Download，完成下载。</p>
+<p><strong>引入样式文件</strong><br>将下载的 <code>style.css</code> 文件引入项目。</p>
+<p><strong>字体转 base64 格式（针对小程序）</strong><br>准备好下载的 <code>fonts/xxx.woff</code> 字体文件，进入 trasfonter 网站，Add fonts -&gt; .woff -&gt; Base64 encode -&gt; Convert -&gt; Download，完成下载。</p>
+<p><strong>替换字体代码（针对小程序）</strong><br>用下载的 <code>stylesheet.css</code> 文件代码，替换 <code>style.css</code> 文件中 <code>@font-face</code> 代码。并把 <code>[class^=&quot;icon-&quot;], [class*=&quot; icon-&quot;]</code> 改为 <code>.icon</code>。</p>
+<p><strong>使用字体图标</strong><br>以类似 <code>&lt;span class=&quot;icon icon-home&quot;&gt;&lt;/span&gt;</code> 的方式使用字体图标，设置字体大小。</p>
+
       
     </div>
 
@@ -357,8 +361,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/25/float和positionabsolute脱离文本流的区别/" rel="next" title="float 和 position:absolute 脱离文本流的区别">
-                <i class="fa fa-chevron-left"></i> float 和 position:absolute 脱离文本流的区别
+              <a href="/2017/11/12/create-react-app下解决跨域/" rel="next" title="create-react-app 下解决跨域">
+                <i class="fa fa-chevron-left"></i> create-react-app 下解决跨域
               </a>
             
           </div>
@@ -366,10 +370,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/08/在小程序中使用字体图标/" rel="prev" title="在小程序中使用字体图标">
-                在小程序中使用字体图标 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

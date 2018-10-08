@@ -256,6 +256,123 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/在小程序中使用字体图标/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/08/在小程序中使用字体图标/" itemprop="url">在小程序中使用字体图标</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-08T18:47:32+08:00">
+                2018-10-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>准备 svg 格式的图标</strong><br>可以到图标网站下载，或者自己用 Adobe Illustrator 画。</p>
+<p><strong>使用 IcoMoon 制作字体</strong><br>进入 IcoMoon 网站，IcoMoon App -&gt; New Project(not necessary) -&gt; Import Icons -&gt; Generate Font -&gt; Download，完成下载。</p>
+<p><strong>引入样式文件</strong><br>将下载的 <code>style.css</code> 文件引入项目。</p>
+<p><strong>字体转 base64 格式（针对小程序）</strong><br>准备好下载的 <code>fonts/xxx.woff</code> 字体文件，进入 trasfonter 网站，Add fonts -&gt; .woff -&gt; Base64 encode -&gt; Convert -&gt; Download，完成下载。</p>
+<p><strong>替换字体代码（针对小程序）</strong><br>用下载的 <code>stylesheet.css</code> 文件代码，替换 <code>style.css</code> 文件中 <code>@font-face</code> 代码。并把 <code>[class^=&quot;icon-&quot;], [class*=&quot; icon-&quot;]</code> 改为 <code>.icon</code>。</p>
+<p><strong>使用字体图标</strong><br>以类似 <code>&lt;span class=&quot;icon icon-home&quot;&gt;&lt;/span&gt;</code> 的方式使用字体图标，设置字体大小。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/12/create-react-app下解决跨域/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1360,123 +1477,6 @@ var c = new C();
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：代码风格/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/25/JS笔记：代码风格/" itemprop="url">JS 笔记：代码风格</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:07+08:00">
-                2017-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>首先</strong><br>代码是给人阅读的，只是偶尔让计算机执行一下。</p>
-<p><strong>狭义</strong><br>代码的格式（包括缩进、大括号、分号、换行、空行、空格）</p>
-<p><strong>广义</strong><br>目录结构和文件名、变量命名、文档规范。</p>
-<p><strong>六种常见的代码风格</strong><br><a href="http://geek.csdn.net/news/detail/3394" target="_blank" rel="external">计算机一年级学生写的代码与一只猫写的代码有什么不同？</a></p>
-<p><strong>一些特殊的 JS“风格”</strong><br>IIFE（Immediately-Invoked Function Expression）<br>严格模式（use strict）<br>模块</p>
-<p><strong>代码风格检查工具</strong><br>ESLint<br>standard<br>semistandard</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1526,7 +1526,7 @@ var c = new C();
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-count">34</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1581,7 +1581,7 @@ var c = new C();
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

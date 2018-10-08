@@ -256,6 +256,123 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：代码风格/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：代码风格/" itemprop="url">JS 笔记：代码风格</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:07+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>首先</strong><br>代码是给人阅读的，只是偶尔让计算机执行一下。</p>
+<p><strong>狭义</strong><br>代码的格式（包括缩进、大括号、分号、换行、空行、空格）</p>
+<p><strong>广义</strong><br>目录结构和文件名、变量命名、文档规范。</p>
+<p><strong>六种常见的代码风格</strong><br><a href="http://geek.csdn.net/news/detail/3394" target="_blank" rel="external">计算机一年级学生写的代码与一只猫写的代码有什么不同？</a></p>
+<p><strong>一些特殊的 JS“风格”</strong><br>IIFE（Immediately-Invoked Function Expression）<br>严格模式（use strict）<br>模块</p>
+<p><strong>代码风格检查工具</strong><br>ESLint<br>standard<br>semistandard</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：概述/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1421,131 +1538,6 @@ aside { display: table-cell; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：盒模型.md/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：盒模型.md/" itemprop="url">CSS 笔记：盒模型</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:15+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>margin 折叠</strong><br>相同上下文内，margin 会合并。</p>
-<p><strong>margin 负值</strong><br>盒子之间可以出现重叠。</p>
-<p><strong>box-sizing</strong><br>改变盒模型计算方式，取值为：border-box, content-box。<br>可以用显示继承灵活控制 box-sizing 使用范围：</p>
-<pre><code>* { box-sizing: inherit; }
-html { box-sizing: border-box; }
-div { box-sizing: content-box; }
-</code></pre><p><strong>Viewport</strong><br>浏览器的可视区域</p>
-<p><strong>行级盒</strong><br>行级盒的 margin-top 和 margin-bottom 不会产生效果。<br>行级盒的 padding-top 和 padding-top 不影响布局。</p>
-<p><strong>Generated Content</strong><br>控制元素，可以用于添加图标。</p>
-<pre><code>&lt;i class=&quot;fa fa-comments&apos;&gt;&lt;/i&gt;
-&lt;style&gt;
-    .fa-comments:before { content: &apos;\f086&apos;; }
-&lt;/style&gt;
-/*html 是表述内容和结构，我认为图标不是内容，只是修饰，所以用伪元素控制*/
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1595,7 +1587,7 @@ div { box-sizing: content-box; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-count">34</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1650,7 +1642,7 @@ div { box-sizing: content-box; }
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
