@@ -256,6 +256,123 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：排版细节/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/18/CSS笔记：排版细节/" itemprop="url">CSS 笔记：排版细节</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:53+08:00">
+                2017-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>strut</strong><br>p 标签中的 img 图片距离底部会有一点距离，原因是文字的 baseline 在 text-bottom 之上。<br><img src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E6%8E%92%E7%89%88%E7%BB%86%E8%8A%82.jpg" alt="排版字体细节" width="700px"></p>
+<p><strong>lists style</strong><br>list-item 会生成 Principle Block 和 Marker Box（小圆点）。<br>Marker Box 的内容和位置可以通过 list-style 系列属性指定。</p>
+<p><strong>list-style-type</strong><br>none, disc, circle, square, decimal, lower-roman, upper-roman 等。</p>
+<p><strong>list-style-image</strong><br><code>li { list-style-image: url(https://xxx.com/xxx/xxx.svg }</code></p>
+<p><strong>background-size</strong><br>contain：保持比例，包含完整图片。<br>cover：保持比例，图片填满容器。</p>
+<p><strong>多重阴影</strong><br>一个盒子可以写无限多个阴影（用来复原盒子，画logo、多啦A梦等等）。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：定位与堆叠/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1356,127 +1473,6 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML笔记：文本/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/03/HTML笔记：文本/" itemprop="url">HTML 笔记：文本</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-03T15:54:10+08:00">
-                2017-08-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>内容划分</strong><br><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></p>
-<p><strong>div 和 span</strong><br>实在找不到其它更符合语义的标签时使用。</p>
-<p><strong>预格式化文本</strong></p>
-<pre><code>&lt;pre&gt;空   格
-第二行&lt;/pre&gt;
-</code></pre><p><strong>代码</strong></p>
-<pre><code>&lt;pre&gt;&lt;code&gt;const add = (a, b) =&gt; a + b;&lt;/code&gt;&lt;/pre&gt;
-</code></pre><p><strong>上标和下标</strong></p>
-<pre><code>&lt;p&gt;E = MC&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;CO&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1526,7 +1522,7 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">35</span>
+                <span class="site-state-item-count">36</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>

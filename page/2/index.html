@@ -256,6 +256,137 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：函数/" itemprop="url">JS 笔记：函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:27+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>函数声明和函数表达式</strong><br>函数声明会提升，函数表达式不会。</p>
+<pre><code>console.log([typeof add, typeof sub]); // [&quot;function&quot;, &quot;undefined&quot;]
+function add(x, y) { return x + y; }
+var sub = function(x, y) { return x - y; }
+</code></pre><p><strong>闭包</strong><br>闭包通常用来创建内部变量，使得这些变量不能被外部随意修改，同时又可以通过指定的函数接口来操作。 </p>
+<p><strong>闭包作用域</strong><br>用IIFE产生的闭包模拟块级作用域：</p>
+<pre><code>for(var i = 0; i &lt; 10; i++) {
+    (function(i) {
+        setTimeout(function() { console.log(i); }, 100 * i);
+    })(i)
+}
+</code></pre><p>es6:</p>
+<pre><code>for(let i = 0; i &lt; 10; i++) {
+    setTimeout(function() { console.log(i); }, 100 * i);
+}
+</code></pre><p><strong>this</strong><br>全局范围：指全局对象，浏览器中指 window。<br>对象的方法：指这个对象。<br>构造函数：指新对象。<br>call/apply：由参数指定。</p>
+<p><strong>异步</strong><br>Timer<br>事件<br>获取数据 API<br>Promise<br>其它异步模型</p>
+<p><strong>数据抽象和过程抽象</strong><br>数据抽象：<br>define: f -&gt; dataFormF = f(data)<br>define: g -&gt; result = g(dataFormF)<br>过程抽象：<br>define: f -&gt; dateFormF = f(data)<br>define: g -&gt; k = g(f), result = k(data)</p>
+<p><strong>高阶函数</strong><br>把函数作为参数传入，这样的函数称为高阶函数，函数式编程就是指这种高度抽象的编程范式。<br>（也可以理解为操作函数的函数）</p>
+<p><strong>函数的本质</strong><br>封装过程，开放接口。<br>好的程序涉及是面向接口编程，而不是面向实现编程。<br>（需要使用者理解实现的代码不是好代码）</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1464,123 +1595,6 @@ aside { display: table-cell; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：排版细节/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：排版细节/" itemprop="url">CSS 笔记：排版细节</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:53+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>strut</strong><br>p 标签中的 img 图片距离底部会有一点距离，原因是文字的 baseline 在 text-bottom 之上。<br><img src="http://ot8ooevw7.bkt.clouddn.com/blog/75team/%E6%8E%92%E7%89%88%E7%BB%86%E8%8A%82.jpg" alt="排版字体细节" width="700px"></p>
-<p><strong>lists style</strong><br>list-item 会生成 Principle Block 和 Marker Box（小圆点）。<br>Marker Box 的内容和位置可以通过 list-style 系列属性指定。</p>
-<p><strong>list-style-type</strong><br>none, disc, circle, square, decimal, lower-roman, upper-roman 等。</p>
-<p><strong>list-style-image</strong><br><code>li { list-style-image: url(https://xxx.com/xxx/xxx.svg }</code></p>
-<p><strong>background-size</strong><br>contain：保持比例，包含完整图片。<br>cover：保持比例，图片填满容器。</p>
-<p><strong>多重阴影</strong><br>一个盒子可以写无限多个阴影（用来复原盒子，画logo、多啦A梦等等）。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1630,7 +1644,7 @@ aside { display: table-cell; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">35</span>
+                <span class="site-state-item-count">36</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
