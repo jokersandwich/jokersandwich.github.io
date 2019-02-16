@@ -256,6 +256,121 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：定位与堆叠/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/18/CSS笔记：定位与堆叠/" itemprop="url">CSS 笔记：定位与堆叠</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:38+08:00">
+                2017-08-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>position</strong><br>static：非定位，默认值<br>realative：相对定位（相对自己）<br>absolute：绝对定位，相对非 static 祖先元素定位<br>fixed：相对于视口绝对定位</p>
+<p><strong>line-height</strong><br>只有一行文字需要居中，可以不设置 height，只设置 line-height。<br><code>.box { width: 200px; line-height: 200px; text-align: center; }</code></p>
+<p><strong>z-index 堆叠层次</strong><br>初始值为 auto，可以为负整数、0、正整数，数值越大，越靠近用户。</p>
+<p><strong>堆叠上下文的生成</strong><br>Root 元素<br>z-index 值不为 auto 的定位元素。<br>设置了某些 CSS3 属性的元素，比如 opacity、transform、animation 等。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：盒模型.md/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1362,124 +1477,6 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/03/HTML笔记：简介/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/03/HTML笔记：简介/" itemprop="url">HTML 笔记：简介</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-03T15:40:23+08:00">
-                2017-08-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>HTML 是什么？<br>HyperText Markup Language，使用标签来描述页面的内容和结构。</p>
-<p>HTML 的产生<br>1989 年，Tim Berners-Lee，还发明了浏览器、服务器和 HTTP。</p>
-<p>HTML 1.0<br>1991 年，少量标签。</p>
-<p>HTML 2.0<br>1994 年，IETF，更多标签。</p>
-<p>HTML 3.2<br>1997 年，W3C，HTML 3.0失败，W3C 接管 HTML 标准化。</p>
-<p>HTML 4.01<br>1998 年，内容与样式分离，CSS支持。</p>
-<p>HTML 5<br>2008 年，W3C HTML5 草案发布，新增语义化标签、canvas、video、audio、离线、本地储存、拖拽等。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1529,7 +1526,7 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-count">35</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1584,7 +1581,7 @@ h1 { font-familt: &apos;Lobster&apos;, cursive; }
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

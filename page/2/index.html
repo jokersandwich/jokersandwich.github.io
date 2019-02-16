@@ -256,6 +256,164 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JS笔记：变量、值与类型/" itemprop="url">JS 笔记：变量、值与类型</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:12+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>数据类型</strong><br>number, strign, boolean, null, undefined, object</p>
+<p><strong>变量提升</strong><br>变量提升即将变量声明提升到它所在作用域的最开始的部分。</p>
+<pre><code>console.log(global); // undefined
+var global = &apos;global&apos;;
+console.log(global); // global
+function fn () {
+　　console.log(a); // undefined
+　　var a = &apos;aaa&apos;;
+　　console.log(a); // aaa
+}
+fn();
+</code></pre><p>之所以会是以上的打印结果，是由于变量提升，实际上上面的代码是按照以下来执行的：</p>
+<pre><code>var global; // 变量提升，全局作用域范围内，此时只是声明，并没有赋值
+console.log(global); // undefined
+global = &apos;global&apos;; // 此时才赋值
+console.log(global); // 打印出global
+function fn () {
+　　var a; // 变量提升，函数作用域范围内
+　　console.log(a); // undefined
+　　a = &apos;aaa&apos;;
+　　console.log(a); // aaa
+}
+fn();
+</code></pre><p><strong>Boolean</strong><br>建议采用严格比较，可以通过 !! 将非 boolean 值转为 boolean。<br>布尔操作符 &amp;&amp; 和 || 并不会转换类型。<br>比较操作符总是返回 boolean 类型。</p>
+<pre><code>var result = 1 &amp;&amp; 2;
+console.log([result, !!result]); // [2, true]
+</code></pre><p><strong>Number</strong><br>数值范围：Infinity、Number.MAX_VALUE、Number.MIN_VALUE<br>浮点数精度：<code>console.log(0.2 + 0.4); // 0.6000000000000001</code></p>
+<p><strong>String</strong><br>隐式类型转换：<code>console.log([1+2, &#39;1&#39;+2, &#39;1&#39;-0+2]); // [3, &quot;12&quot;, 3]</code><br>转整数：<code>console.log(parseInt(&#39;100abc&#39;, 2)); // 100</code><br>转浮点数：<code>console.log(parseFloat(&#39;12.3e5xx&#39;); // 1230000;</code></p>
+<p><strong>对象的拷贝</strong><br>直接引用：<code>let obj2 = obj1; // 改变 obj2，原对象不会变</code><br>浅拷贝：<code>let obj2 = Object.assign({}, obj1); // 改变 obj2，原对象属性不会变，子对象会变</code><br>深拷贝：递归函数实现。 <code>// 原对象不会变</code></p>
+<p><strong>原型链</strong><br><code>__proto__</code> 构建原型链：</p>
+<pre><code>var a = {x: 1}, b = {y: 2}, c = {z: 3};
+b.__proto__ = a;
+c.__proto__ = b;
+</code></pre><p>使用 <code>Object.create</code> 构建原型链：</p>
+<pre><code>var a = {x: 1};
+var b = Object.create(a);
+b.y = 2;
+var c = Object.create(b);
+c.z = 3;
+</code></pre><p>使用构造器方式：（标准）</p>
+<pre><code>function A() { this.x = 1; }
+function B() { this.y = 2; }
+B.prototype = new A();
+function C() { this.z = 3; }
+C.prototype = new B();
+var c = new C();
+</code></pre><p><strong>内置类型</strong><br>Object, Function, Array, Date, Math, Regex, Error, Promise…</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：代码风格/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1423,121 +1581,6 @@ aside { display: table-cell; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：定位与堆叠/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/18/CSS笔记：定位与堆叠/" itemprop="url">CSS 笔记：定位与堆叠</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T07:05:38+08:00">
-                2017-08-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>position</strong><br>static：非定位，默认值<br>realative：相对定位（相对自己）<br>absolute：绝对定位，相对非 static 祖先元素定位<br>fixed：相对于视口绝对定位</p>
-<p><strong>line-height</strong><br>只有一行文字需要居中，可以不设置 height，只设置 line-height。<br><code>.box { width: 200px; line-height: 200px; text-align: center; }</code></p>
-<p><strong>z-index 堆叠层次</strong><br>初始值为 auto，可以为负整数、0、正整数，数值越大，越靠近用户。</p>
-<p><strong>堆叠上下文的生成</strong><br>Root 元素<br>z-index 值不为 auto 的定位元素。<br>设置了某些 CSS3 属性的元素，比如 opacity、transform、animation 等。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1587,7 +1630,7 @@ aside { display: table-cell; }
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-count">35</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1642,7 +1685,7 @@ aside { display: table-cell; }
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

@@ -256,6 +256,159 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/16/基本排序算法（JavaScript）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue Hong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jokersandwich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/16/基本排序算法（JavaScript）/" itemprop="url">基本排序算法（JavaScript）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-16T19:23:12+08:00">
+                2019-02-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>资料来自<a href="https://juejin.im/post/5c64d15d6fb9a049d37f9c20#heading-67" target="_blank" rel="external">掘金</a></p>
+<p><strong>冒泡排序</strong></p>
+<pre><code>function bubleSort(arr) {
+    var len = arr.length;
+    for (let outer = len ; outer &gt;= 2; outer--) {
+        for(let inner = 0; inner &lt;=outer - 1; inner++) {
+            if(arr[inner] &gt; arr[inner + 1]) {
+                [arr[inner],arr[inner+1]] = [arr[inner+1],arr[inner]]
+            }
+        }
+    }
+    return arr;
+}
+</code></pre><p><strong>选择排序</strong></p>
+<pre><code>function selectSort(arr) {
+    var len = arr.length;
+    for(let i = 0 ;i &lt; len - 1; i++) {
+        for(let j = i ; j&lt;len; j++) {
+            if(arr[j] &lt; arr[i]) {
+                [arr[i],arr[j]] = [arr[j],arr[i]];
+            }
+        }
+    }
+    return arr
+}
+</code></pre><p><strong>快速排序</strong></p>
+<pre><code>function quickSort(arr) {
+    if(arr.length &lt;= 1) {
+        return arr;  //递归出口
+    }
+    var left = [],
+        right = [],
+        current = arr.splice(0,1); 
+    for(let i = 0; i &lt; arr.length; i++) {
+        if(arr[i] &lt; current) {
+            left.push(arr[i])  //放在左边
+        } else {
+            right.push(arr[i]) //放在右边
+        }
+    }
+    return quickSort(left).concat(current,quickSort(right));
+}
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/08/在小程序中使用字体图标/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1319,164 +1472,6 @@ var sub = function(x, y) { return x - y; }
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JS笔记：变量、值与类型/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue Hong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="jokersandwich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/25/JS笔记：变量、值与类型/" itemprop="url">JS 笔记：变量、值与类型</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-25T00:11:12+08:00">
-                2017-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><strong>数据类型</strong><br>number, strign, boolean, null, undefined, object</p>
-<p><strong>变量提升</strong><br>变量提升即将变量声明提升到它所在作用域的最开始的部分。</p>
-<pre><code>console.log(global); // undefined
-var global = &apos;global&apos;;
-console.log(global); // global
-function fn () {
-　　console.log(a); // undefined
-　　var a = &apos;aaa&apos;;
-　　console.log(a); // aaa
-}
-fn();
-</code></pre><p>之所以会是以上的打印结果，是由于变量提升，实际上上面的代码是按照以下来执行的：</p>
-<pre><code>var global; // 变量提升，全局作用域范围内，此时只是声明，并没有赋值
-console.log(global); // undefined
-global = &apos;global&apos;; // 此时才赋值
-console.log(global); // 打印出global
-function fn () {
-　　var a; // 变量提升，函数作用域范围内
-　　console.log(a); // undefined
-　　a = &apos;aaa&apos;;
-　　console.log(a); // aaa
-}
-fn();
-</code></pre><p><strong>Boolean</strong><br>建议采用严格比较，可以通过 !! 将非 boolean 值转为 boolean。<br>布尔操作符 &amp;&amp; 和 || 并不会转换类型。<br>比较操作符总是返回 boolean 类型。</p>
-<pre><code>var result = 1 &amp;&amp; 2;
-console.log([result, !!result]); // [2, true]
-</code></pre><p><strong>Number</strong><br>数值范围：Infinity、Number.MAX_VALUE、Number.MIN_VALUE<br>浮点数精度：<code>console.log(0.2 + 0.4); // 0.6000000000000001</code></p>
-<p><strong>String</strong><br>隐式类型转换：<code>console.log([1+2, &#39;1&#39;+2, &#39;1&#39;-0+2]); // [3, &quot;12&quot;, 3]</code><br>转整数：<code>console.log(parseInt(&#39;100abc&#39;, 2)); // 100</code><br>转浮点数：<code>console.log(parseFloat(&#39;12.3e5xx&#39;); // 1230000;</code></p>
-<p><strong>对象的拷贝</strong><br>直接引用：<code>let obj2 = obj1; // 改变 obj2，原对象不会变</code><br>浅拷贝：<code>let obj2 = Object.assign({}, obj1); // 改变 obj2，原对象属性不会变，子对象会变</code><br>深拷贝：递归函数实现。 <code>// 原对象不会变</code></p>
-<p><strong>原型链</strong><br><code>__proto__</code> 构建原型链：</p>
-<pre><code>var a = {x: 1}, b = {y: 2}, c = {z: 3};
-b.__proto__ = a;
-c.__proto__ = b;
-</code></pre><p>使用 <code>Object.create</code> 构建原型链：</p>
-<pre><code>var a = {x: 1};
-var b = Object.create(a);
-b.y = 2;
-var c = Object.create(b);
-c.z = 3;
-</code></pre><p>使用构造器方式：（标准）</p>
-<pre><code>function A() { this.x = 1; }
-function B() { this.y = 2; }
-B.prototype = new A();
-function C() { this.z = 3; }
-C.prototype = new B();
-var c = new C();
-</code></pre><p><strong>内置类型</strong><br>Object, Function, Array, Date, Math, Regex, Error, Promise…</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1526,7 +1521,7 @@ var c = new C();
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-count">35</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -1581,7 +1576,7 @@ var c = new C();
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2018</span>
+  <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
