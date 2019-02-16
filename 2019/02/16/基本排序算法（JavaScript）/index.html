@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="资料来自掘金 冒泡排序 function bubleSort(arr) {     var len = arr.length;     for (let outer = len ; outer &amp;gt;= 2; outer--) {         for(let inner = 0; inner &amp;lt;=outer - 1; inner++) {             if(arr[inne">
+<meta name="description" content="资料来自掘金 冒泡排序两两比较，把最大的放到后面 function bubleSort(arr) {     var len = arr.length;     for (let outer = len ; outer &amp;gt;= 2; outer--) {         for(let inner = 0; inner &amp;lt;=outer - 1; inner++) {">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基本排序算法（JavaScript）">
 <meta property="og:url" content="http://yoursite.com/2019/02/16/基本排序算法（JavaScript）/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="资料来自掘金 冒泡排序 function bubleSort(arr) {     var len = arr.length;     for (let outer = len ; outer &amp;gt;= 2; outer--) {         for(let inner = 0; inner &amp;lt;=outer - 1; inner++) {             if(arr[inne">
-<meta property="og:updated_time" content="2019-02-16T11:30:50.985Z">
+<meta property="og:description" content="资料来自掘金 冒泡排序两两比较，把最大的放到后面 function bubleSort(arr) {     var len = arr.length;     for (let outer = len ; outer &amp;gt;= 2; outer--) {         for(let inner = 0; inner &amp;lt;=outer - 1; inner++) {">
+<meta property="og:updated_time" content="2019-02-16T11:36:36.611Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基本排序算法（JavaScript）">
-<meta name="twitter:description" content="资料来自掘金 冒泡排序 function bubleSort(arr) {     var len = arr.length;     for (let outer = len ; outer &amp;gt;= 2; outer--) {         for(let inner = 0; inner &amp;lt;=outer - 1; inner++) {             if(arr[inne">
+<meta name="twitter:description" content="资料来自掘金 冒泡排序两两比较，把最大的放到后面 function bubleSort(arr) {     var len = arr.length;     for (let outer = len ; outer &amp;gt;= 2; outer--) {         for(let inner = 0; inner &amp;lt;=outer - 1; inner++) {">
 
 
 
@@ -320,7 +320,7 @@
 
       
         <p>资料来自<a href="https://juejin.im/post/5c64d15d6fb9a049d37f9c20#heading-67" target="_blank" rel="external">掘金</a></p>
-<p><strong>冒泡排序</strong></p>
+<p><strong>冒泡排序</strong><br>两两比较，把最大的放到后面</p>
 <pre><code>function bubleSort(arr) {
     var len = arr.length;
     for (let outer = len ; outer &gt;= 2; outer--) {
@@ -332,7 +332,7 @@
     }
     return arr;
 }
-</code></pre><p><strong>选择排序</strong></p>
+</code></pre><p><strong>选择排序</strong><br>遍历元素，如果比第一个小，就交换位置</p>
 <pre><code>function selectSort(arr) {
     var len = arr.length;
     for(let i = 0 ;i &lt; len - 1; i++) {
@@ -344,7 +344,7 @@
     }
     return arr
 }
-</code></pre><p><strong>快速排序</strong></p>
+</code></pre><p><strong>快速排序</strong><br>选一个基准值，剩下小的放左边，大的放右边，递归左边和右边</p>
 <pre><code>function quickSort(arr) {
     if(arr.length &lt;= 1) {
         return arr;  //递归出口

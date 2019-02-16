@@ -325,7 +325,7 @@
         
           
             <p>资料来自<a href="https://juejin.im/post/5c64d15d6fb9a049d37f9c20#heading-67" target="_blank" rel="external">掘金</a></p>
-<p><strong>冒泡排序</strong></p>
+<p><strong>冒泡排序</strong><br>两两比较，把最大的放到后面</p>
 <pre><code>function bubleSort(arr) {
     var len = arr.length;
     for (let outer = len ; outer &gt;= 2; outer--) {
@@ -337,7 +337,7 @@
     }
     return arr;
 }
-</code></pre><p><strong>选择排序</strong></p>
+</code></pre><p><strong>选择排序</strong><br>遍历元素，如果比第一个小，就交换位置</p>
 <pre><code>function selectSort(arr) {
     var len = arr.length;
     for(let i = 0 ;i &lt; len - 1; i++) {
@@ -349,7 +349,7 @@
     }
     return arr
 }
-</code></pre><p><strong>快速排序</strong></p>
+</code></pre><p><strong>快速排序</strong><br>选一个基准值，剩下小的放左边，大的放右边，递归左边和右边</p>
 <pre><code>function quickSort(arr) {
     if(arr.length &lt;= 1) {
         return arr;  //递归出口
