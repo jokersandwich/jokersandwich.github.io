@@ -93,16 +93,16 @@
 
 
 
-<meta name="description" content="定位模式常规流（Normal Flow）浮动（Float）绝对定位（Absolute Positioning） 浮动浮动元素会从常规流中脱离，漂到容器左边缘或右边缘，挤开其它元素。 clear指定元素哪一边不能与之前的浮动框相邻，取值为 left、right、both。 clearfix在浮动元素父级之后加一个匿名 div 清除浮动。 .clearfix::after {     content:">
+<meta name="description" content="同步 -&amp;gt; process.nextTick -&amp;gt; Promise.then -&amp;gt; setTimeout, setImmediate setImmediate(function(){     console.log(1); },0); setTimeout(function(){     console.log(2); },0); new Promise(function(res">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS 笔记：浮动">
-<meta property="og:url" content="http://yoursite.com/2017/08/18/CSS笔记：浮动/index.html">
+<meta property="og:title" content="异步执行顺序">
+<meta property="og:url" content="http://yoursite.com/2019/03/02/异步执行顺序/index.html">
 <meta property="og:site_name" content="jokersandwich">
-<meta property="og:description" content="定位模式常规流（Normal Flow）浮动（Float）绝对定位（Absolute Positioning） 浮动浮动元素会从常规流中脱离，漂到容器左边缘或右边缘，挤开其它元素。 clear指定元素哪一边不能与之前的浮动框相邻，取值为 left、right、both。 clearfix在浮动元素父级之后加一个匿名 div 清除浮动。 .clearfix::after {     content:">
-<meta property="og:updated_time" content="2017-08-17T22:58:15.654Z">
+<meta property="og:description" content="同步 -&amp;gt; process.nextTick -&amp;gt; Promise.then -&amp;gt; setTimeout, setImmediate setImmediate(function(){     console.log(1); },0); setTimeout(function(){     console.log(2); },0); new Promise(function(res">
+<meta property="og:updated_time" content="2019-03-02T06:19:57.640Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS 笔记：浮动">
-<meta name="twitter:description" content="定位模式常规流（Normal Flow）浮动（Float）绝对定位（Absolute Positioning） 浮动浮动元素会从常规流中脱离，漂到容器左边缘或右边缘，挤开其它元素。 clear指定元素哪一边不能与之前的浮动框相邻，取值为 left、right、both。 clearfix在浮动元素父级之后加一个匿名 div 清除浮动。 .clearfix::after {     content:">
+<meta name="twitter:title" content="异步执行顺序">
+<meta name="twitter:description" content="同步 -&amp;gt; process.nextTick -&amp;gt; Promise.then -&amp;gt; setTimeout, setImmediate setImmediate(function(){     console.log(1); },0); setTimeout(function(){     console.log(2); },0); new Promise(function(res">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/18/CSS笔记：浮动/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/02/异步执行顺序/"/>
 
 
 
 
 
-  <title>CSS 笔记：浮动 | jokersandwich</title>
+  <title>异步执行顺序 | jokersandwich</title>
   
 
 
@@ -255,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/18/CSS笔记：浮动/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/02/异步执行顺序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue Hong">
@@ -272,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS 笔记：浮动</h1>
+          <h1 class="post-title" itemprop="name headline">异步执行顺序</h1>
         
 
         <div class="post-meta">
@@ -284,8 +284,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-18T06:54:34+08:00">
-                2017-08-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-02T14:03:00+08:00">
+                2019-03-02
               </time>
             
 
@@ -319,20 +319,27 @@
       
 
       
-        <p><strong>定位模式</strong><br>常规流（Normal Flow）<br>浮动（Float）<br>绝对定位（Absolute Positioning）</p>
-<p><strong>浮动</strong><br>浮动元素会从常规流中脱离，漂到容器左边缘或右边缘，挤开其它元素。</p>
-<p><strong>clear</strong><br>指定元素哪一边不能与之前的浮动框相邻，取值为 left、right、both。</p>
-<p><strong>clearfix</strong><br>在浮动元素父级之后加一个匿名 div 清除浮动。</p>
-<pre><code>.clearfix::after {
-    content: &apos; &apos;;
-    display: block;
-    clear: both;
-    height: 0;
-    overflow: hidden;
-}
-</code></pre><p><strong>块级元素上下文（BFC）</strong><br>BFC 可以通过 overflow: hidden 等方法创建。<br>BFC 可以清除浮动。<br><code>section { overflow: hidden }</code><br>BFC 可以实现双栏布局。</p>
-<pre><code>img { float: left }
-p { overflow: hidden; padding-left: 10px }
+        <p>同步 -&gt; process.nextTick -&gt; Promise.then -&gt; setTimeout, setImmediate</p>
+<pre><code>setImmediate(function(){
+    console.log(1);
+},0);
+setTimeout(function(){
+    console.log(2);
+},0);
+new Promise(function(resolve){
+    console.log(3);
+    resolve();
+    console.log(4);
+}).then(function(){
+    console.log(5);
+});
+console.log(6);
+process.nextTick(function(){
+    console.log(7);
+});
+console.log(8);
+
+// 3 4 6 8 7 5 2 1
 </code></pre>
       
     </div>
@@ -369,8 +376,8 @@ p { overflow: hidden; padding-left: 10px }
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/18/CSS笔记：文本样式/" rel="next" title="CSS 笔记：文本样式">
-                <i class="fa fa-chevron-left"></i> CSS 笔记：文本样式
+              <a href="/2019/02/16/基本数据结构/" rel="next" title="基本数据结构">
+                <i class="fa fa-chevron-left"></i> 基本数据结构
               </a>
             
           </div>
@@ -378,10 +385,6 @@ p { overflow: hidden; padding-left: 10px }
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/18/CSS笔记：层叠和单位/" rel="prev" title="CSS 笔记：层叠和单位">
-                CSS 笔记：层叠和单位 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
